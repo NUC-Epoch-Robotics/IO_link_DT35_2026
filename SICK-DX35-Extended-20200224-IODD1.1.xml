@@ -1,0 +1,2354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with SICK IODD editor 3.2.0.1039R --><IODevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.io-link.com/IODD/2010/10"
+          xsi:schemaLocation="http://www.io-link.com/IODD/2010/10 IODD1.1.xsd">
+  <DocumentInfo copyright="Copyright 2019, SICK AG"
+                 releaseDate="2020-02-24"
+                 version="V1.3"/>
+  <ProfileHeader>
+      <ProfileIdentification>IO Device Profile</ProfileIdentification>
+      <ProfileRevision>1.1</ProfileRevision>
+      <ProfileName>Device Profile for IO Devices</ProfileName>
+      <ProfileSource>IO-Link Consortium</ProfileSource>
+      <ProfileClassID>Device</ProfileClassID>
+      <ISO15745Reference>
+         <ISO15745Part>1</ISO15745Part>
+         <ISO15745Edition>1</ISO15745Edition>
+         <ProfileTechnology>IODD</ProfileTechnology>
+      </ISO15745Reference>
+  </ProfileHeader>
+  <ProfileBody>
+      <DeviceIdentity additionalDeviceIds="6488065 6488070"
+                      deviceId="6488071"
+                      vendorId="26"
+                      vendorName="SICK AG">
+         <VendorText textId="TI_VendorText"/>
+         <VendorUrl textId="TI_VendorUrl"/>
+         <VendorLogo name="SICK-AG-logo.png"/>
+         <DeviceName textId="TI_f54c5761-eea9-4abb-9a09-696460e3e014"/>
+         <DeviceFamily textId="TI_DeviceFamily"/>
+         <DeviceVariantCollection>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1062856">
+               <Name textId="TI_P789_Name"/>
+               <Description textId="TI_P789_Text"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1068098">
+               <Name textId="TI_87fde69d-4486-49dd-89be-b042dc991743"/>
+               <Description textId="TI_f60cf3f2-0ab7-4dd5-9b36-325845889b95"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1057651">
+               <Name textId="TI_e5620e5c-3d82-4042-8fc7-fb2eb0985910"/>
+               <Description textId="TI_a35494e8-e91a-4a4e-b5eb-f8a42e59074a"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1057652">
+               <Name textId="TI_afcb8eb4-2b9f-43ee-a77d-f6a010ba65b8"/>
+               <Description textId="TI_2e884e95-6481-4ffc-86e8-b8d66a1cd0a1"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1057653">
+               <Name textId="TI_44c86b2f-d64f-4966-80df-af7c3b82c2fe"/>
+               <Description textId="TI_589bc78e-83a6-40da-8b2d-7b5849e06d58"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1057657">
+               <Name textId="TI_5105f378-0948-4a19-a436-fbd8896d923a"/>
+               <Description textId="TI_df57798d-af13-437f-b3f0-42d000396fa8"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1057658">
+               <Name textId="TI_bb80d888-2a4e-477d-afd5-96a51b09e5d0"/>
+               <Description textId="TI_97bcee4c-452a-4af9-860e-c17d47ef0cf3"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1066351">
+               <Name textId="TI_51c13b69-d05f-46c4-a9bf-f314cf41eca9"/>
+               <Description textId="TI_60edc772-b550-489a-97f7-263b1df8846e"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1077665">
+               <Name textId="TI_b15ffa47-b730-4f9b-98eb-c433310174ff"/>
+               <Description textId="TI_170fbbe4-3add-4f0f-9676-b1f1a8585e43"/>
+            </DeviceVariant>
+            <DeviceVariant deviceIcon="SICK-AG-DX35-icon.png"
+                           deviceSymbol="SICK-AG-DX35-pic.png"
+                           productId="1077666">
+               <Name textId="TI_b91880de-fba4-426e-85d2-de62898337be"/>
+               <Description textId="TI_5b4a00b4-76d9-4417-8a99-d9202d58e44b"/>
+            </DeviceVariant>
+         </DeviceVariantCollection>
+      </DeviceIdentity>
+      <DeviceFunction>
+         <Features blockParameter="true" dataStorage="true">
+            <SupportedAccessLocks dataStorage="true"
+                                  localParameterization="true"
+                                  localUserInterface="true"
+                                  parameter="true"/>
+         </Features>
+         <VariableCollection>
+            <StdVariableRef excludedFromDataStorage="false" id="V_DirectParameters_1"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_DirectParameters_2"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_SystemCommand">
+               <StdSingleValueRef value="130"/>
+            </StdVariableRef>
+            <StdVariableRef excludedFromDataStorage="false" id="V_DeviceAccessLocks"/>
+            <StdVariableRef defaultValue="SICK AG"
+                            excludedFromDataStorage="false"
+                            id="V_VendorName"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_VendorText"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_ProductName"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_ProductID"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_SerialNumber"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_HardwareRevision"/>
+            <StdVariableRef excludedFromDataStorage="false"
+                            fixedLengthRestriction="12"
+                            id="V_FirmwareRevision"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_ApplicationSpecificTag"/>
+            <StdVariableRef excludedFromDataStorage="false" id="V_ProcessDataInput"/>
+            <Variable id="V_MeasInt"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="64">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <ValueRange lowerValue="0" upperValue="8">
+                     <Name textId="TI_b07cdbe6-660e-4b3a-bbeb-8a28f95f1c24"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_885df48a-a90c-4839-abc5-a66475aa76b4"/>
+               <Description textId="TI_41e8863f-c148-41e9-80fe-502051154f75"/>
+            </Variable>
+            <Variable id="V_QSetting"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="65">
+               <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="8">
+                  <RecordItem bitOffset="0" subindex="1">
+                     <SimpleDatatype xsi:type="BooleanT">
+                        <SingleValue value="false">
+                           <Name textId="TI_cdf51773-cbea-4d15-9e59-38e5be6257ec"/>
+                        </SingleValue>
+                        <SingleValue value="true">
+                           <Name textId="TI_429a16a8-f83a-490c-aea4-c027f4a2684b"/>
+                        </SingleValue>
+                     </SimpleDatatype>
+                     <Name textId="TI_87dddb68-583b-458d-a9b7-82e885ab9b5b"/>
+                  </RecordItem>
+                  <RecordItem bitOffset="1" subindex="2">
+                     <SimpleDatatype xsi:type="BooleanT">
+                        <SingleValue value="false">
+                           <Name textId="TI_d2a50ebd-7e1b-4e82-83f3-011424b613da"/>
+                        </SingleValue>
+                        <SingleValue value="true">
+                           <Name textId="TI_302c1cbf-c8d4-43c9-9746-5614e1c8e5ac"/>
+                        </SingleValue>
+                     </SimpleDatatype>
+                     <Name textId="TI_12eaa370-73b1-44bd-8547-80d04ea60c44"/>
+                  </RecordItem>
+               </Datatype>
+               <RecordItemInfo defaultValue="0"
+                               excludedFromDataStorage="false"
+                               modifiesOtherVariables="false"
+                               subindex="1"/>
+               <RecordItemInfo defaultValue="0"
+                               excludedFromDataStorage="false"
+                               modifiesOtherVariables="false"
+                               subindex="2"/>
+               <Name textId="TI_314ad364-8f57-49b8-bf1d-43ded2bbda53"/>
+               <Description textId="TI_308d772c-adb0-4d3f-b77e-1aa98d570db5"/>
+            </Variable>
+            <Variable id="V_QBitFilter"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="66">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_3022068f-9b65-459c-bac3-fa0d78ec116e"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_6a7787f6-8a0a-4851-bf22-1e8a05ea8437"/>
+                  </SingleValue>
+                  <SingleValue value="4">
+                     <Name textId="TI_654b135a-6f20-4ab8-9ab1-ef5087204476"/>
+                  </SingleValue>
+                  <SingleValue value="8">
+                     <Name textId="TI_3afc900e-4f3b-4f8e-8c05-f39079715a00"/>
+                  </SingleValue>
+                  <SingleValue value="16">
+                     <Name textId="TI_b8d08fca-ad6a-4ab1-86db-54147e03e1d8"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_fca773b6-cd97-4831-8922-73af9392957e"/>
+               <Description textId="TI_3edb48ab-73e4-40d9-b845-e2ad54a476b4"/>
+            </Variable>
+            <Variable id="V_PostFilter"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="67">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="1">
+                     <Name textId="TI_32740fea-4ef0-4d71-a2a0-aa76d543ec0a"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_471a9db2-0d7b-4454-a4cc-c275ddfae1eb"/>
+                  </SingleValue>
+                  <SingleValue value="4">
+                     <Name textId="TI_e02c59e4-8f29-4cff-bc42-8600207a2ba3"/>
+                  </SingleValue>
+                  <SingleValue value="8">
+                     <Name textId="TI_c2a55fed-5ed5-4fbb-8105-7db39f1a4e1b"/>
+                  </SingleValue>
+                  <SingleValue value="16">
+                     <Name textId="TI_92a35a15-476c-4b78-b8db-76e61d4f42c2"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_7ebbb658-9dbb-43e6-aa93-fae504e70329"/>
+               <Description textId="TI_84af542f-3e0b-4988-af7f-b17c10379de4"/>
+            </Variable>
+            <Variable id="V_LaserSwitch"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="68"
+                      defaultValue="1">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_49d7615e-2054-4ac1-be82-2a08dfa0ffa1"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_9eb93f48-0ecf-43fc-b8d9-1115979e1684"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_9b2b20bd-5316-4210-9f2e-aa7842db76a6"/>
+               <Description textId="TI_4c463520-84a4-4be2-a76c-1fd7dd762e6f"/>
+            </Variable>
+            <Variable id="V_Q1OpMode"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="69"
+                      defaultValue="0">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_bb1dc305-ff1c-4c93-abe5-68af93b7aee0"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_92f8cb99-8a61-4854-a501-385b588e465b"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_4cc22564-9e83-420b-9e54-5c43e2582364"/>
+                  </SingleValue>
+                  <SingleValue value="3">
+                     <Name textId="TI_f0538f74-a68c-4cf3-84e5-06adfd464327"/>
+                  </SingleValue>
+                  <SingleValue value="4">
+                     <Name textId="TI_27e00ea0-3cf4-4649-b375-c413c39355bc"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_99dc3a23-e274-4395-ba21-75bc2c8fcec8"/>
+               <Description textId="TI_4e8d2c92-9236-43ca-bf09-bb00265b3a39"/>
+            </Variable>
+            <Variable id="V_Q1ThresholdNear"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="70">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_20841842-c5b2-4c03-8b4f-a6995aa2b917"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_139c2a93-00b9-4465-89ea-e78169d4d94b"/>
+               <Description textId="TI_a4c37b1c-6220-4a00-82f9-f2455c15cf21"/>
+            </Variable>
+            <Variable id="V_Q1HystNear"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="71"
+                      defaultValue="25">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="0" upperValue="49950">
+                     <Name textId="TI_aec9f997-1b1d-4e15-bf6a-7f50d7a37560"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_d1f7a751-3184-4bd8-bdff-2e0fe1b58ee9"/>
+               <Description textId="TI_ed532e6d-b841-41e8-afd3-b7b4e8d9760e"/>
+            </Variable>
+            <Variable id="V_Q1ThresholdFar"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="72"
+                      defaultValue="10000">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_e65709aa-e4fe-4176-abd0-8d86927a41a9"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_930785bf-391e-4d6b-9c91-aa8ac1547965"/>
+            </Variable>
+            <Variable id="V_Q1HystFar"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="73"
+                      defaultValue="25">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="0" upperValue="49950">
+                     <Name textId="TI_2cd8b3d9-ff22-4210-b53f-114de5527e15"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_1eba0d0b-c622-4c07-a281-b7bb085e55e8"/>
+               <Description textId="TI_4a156673-08e6-4043-95b4-5c7b792b2150"/>
+            </Variable>
+            <Variable id="V_Q2OpMode"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="74"
+                      defaultValue="0">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_543deb6f-6093-4173-9456-70a3e83a7deb"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_5c78b658-0e2c-412b-9b0a-f1d2e5f63f66"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_57c841ae-77fc-4d50-a0cc-af33512b4ff1"/>
+                  </SingleValue>
+                  <SingleValue value="3">
+                     <Name textId="TI_11701aa0-2ec7-4899-a414-f86e8d24aad5"/>
+                  </SingleValue>
+                  <SingleValue value="4">
+                     <Name textId="TI_37ef24a2-b0f4-49ce-b166-b4f4a7741c88"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_2879e127-be6b-4c9e-bcdd-9bfbf3112560"/>
+               <Description textId="TI_448b1ef2-c50c-4a93-ab27-daf3c6321a00"/>
+            </Variable>
+            <Variable id="V_Q2ThresholdNear"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="75">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_f5947a6d-ed3a-49db-8db6-7cee8c332a0b"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_df32f680-7936-4c0d-b315-f46911edacbd"/>
+            </Variable>
+            <Variable id="V_Q2HystNear"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="76"
+                      defaultValue="25">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="0" upperValue="49950">
+                     <Name textId="TI_bb03e3f3-0445-4e6e-a207-d4f6f20bd372"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_07110c80-c498-41fa-93fa-1a045de921db"/>
+               <Description textId="TI_7fadf6d2-6c4e-402c-923f-1dbb1c13efff"/>
+            </Variable>
+            <Variable id="V_Q2ThresholdFar"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="77">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_f25800d7-a1fe-4c92-912f-56f85b40d326"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_c7a61531-ebaf-4189-aefc-87c6e29e4df9"/>
+            </Variable>
+            <Variable id="V_Q2HystFar"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="78"
+                      defaultValue="25">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="0" upperValue="49950">
+                     <Name textId="TI_2bc8f37a-cc3b-4882-9d37-a9f3b9601c2a"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_2fdc0261-9cec-4e86-a941-bd3ed5c4f307"/>
+               <Description textId="TI_312cbcf3-7a64-4e4d-87fa-db83168e1bbd"/>
+            </Variable>
+            <Variable id="V_QaLimitLow"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="79">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_c308d92a-8921-423e-8cb4-c920b914e530"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_17f1212c-0da2-46fc-9837-b3641aacb23c"/>
+            </Variable>
+            <Variable id="V_QaLimitHigh"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="80">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_18376b10-0e58-4b44-8732-8c6a1f47b173"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_64236545-6d32-44e3-9e85-72578ee1ebed"/>
+            </Variable>
+            <Variable id="V_MfSetting"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="81"
+                      defaultValue="0">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_477edded-32b4-43e3-8f2a-b73cf74cc9d0"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_132a273a-53c7-4ae9-8d62-f0cb3d35da6e"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_3cc714f9-26b5-41c6-92cb-f521bddb42d3"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_b752121b-6198-403a-ba5c-3f8f19653364"/>
+               <Description textId="TI_30add629-e4ee-446e-9dea-e8fbd139b44c"/>
+            </Variable>
+            <Variable id="V_ButtonLock"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="82">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_4fe0f8b8-9ff7-48ab-ba70-98e2dcf89c07"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_505c8091-afd9-4511-8a10-6ab387450230"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_d94a4f9d-4386-4b21-8dc0-01f1755807be"/>
+               <Description textId="TI_e9d8d253-50ac-46fa-814f-4a367eb79dd2"/>
+            </Variable>
+            <Variable id="V_ProcessDataSelect"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="83"
+                      defaultValue="3">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_de7159e6-a8c4-45cc-a74f-4f3950c7fd52"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_f42bd9fc-25fb-483e-9c39-012a04814f11"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_7f1d3198-1bbe-4a58-b471-c4a5ab63ef23"/>
+                  </SingleValue>
+                  <SingleValue value="3">
+                     <Name textId="TI_9e95c887-7874-4cae-823a-dab1d4329b89"/>
+                  </SingleValue>
+                  <SingleValue value="4">
+                     <Name textId="TI_2f997b32-5a5e-440c-89fc-8e2c9e5ac78f"/>
+                  </SingleValue>
+                  <SingleValue value="5">
+                     <Name textId="TI_7170057c-9422-4774-a189-3f3285b3805b"/>
+                  </SingleValue>
+                  <SingleValue value="6">
+                     <Name textId="TI_a92d6b63-dbea-483c-891a-608feb22255a"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_77987834-202c-4c22-95ba-b8e8cdb0ac30"/>
+               <Description textId="TI_7852b293-b7b5-46a1-a6ce-c84a9042d9bd"/>
+            </Variable>
+            <Variable id="V_UserTag1"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="84">
+               <Datatype xsi:type="UIntegerT" bitLength="32"/>
+               <Name textId="TI_943ca78b-a1d1-4e96-b84b-fb3bb88f4b61"/>
+               <Description textId="TI_2b225d59-da3d-4d16-bb99-f185cc3849cd"/>
+            </Variable>
+            <Variable id="V_UserTag2"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="85">
+               <Datatype xsi:type="UIntegerT" bitLength="16"/>
+               <Name textId="TI_742690f7-c3a7-43c0-ba88-a8e852cf352f"/>
+               <Description textId="TI_dd1c2d38-337b-4f5c-9bbb-7d3390d188a8"/>
+            </Variable>
+            <Variable id="V_Oes4Id"
+                      accessRights="ro"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="86">
+               <Datatype xsi:type="StringT" encoding="UTF-8" fixedLength="6"/>
+               <Name textId="TI_ad6b8042-25a0-48ae-bef6-d22fc0b83b37"/>
+               <Description textId="TI_5a41bdc4-25df-4a70-b657-ccbb066b5580"/>
+            </Variable>
+            <Variable id="V_EkId"
+                      accessRights="ro"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="87">
+               <Datatype xsi:type="StringT" encoding="UTF-8" fixedLength="9"/>
+               <Name textId="TI_45dd4d2f-f478-476c-8caa-ed87627ab112"/>
+               <Description textId="TI_be52d1c1-0561-4588-9543-ea8228d6e82b"/>
+            </Variable>
+            <Variable id="V_LdCharge"
+                      accessRights="ro"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="88">
+               <Datatype xsi:type="StringT" encoding="UTF-8" fixedLength="8"/>
+               <Name textId="TI_f265f44a-40e3-484e-bced-bd12d66db7d6"/>
+               <Description textId="TI_95758edc-66b9-4fff-809a-71a6e33fc027"/>
+            </Variable>
+            <Variable id="V_ErrorStatusLog"
+                      accessRights="ro"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="89">
+               <Datatype xsi:type="UIntegerT" bitLength="8"/>
+               <Name textId="TI_3ec8a745-488f-44b8-b4d0-c9be4d13128a"/>
+               <Description textId="TI_5122e47c-0adc-4edb-97fd-72133a5c09bb"/>
+            </Variable>
+            <Variable id="V_OperatingTime"
+                      accessRights="ro"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="90">
+               <Datatype xsi:type="UIntegerT" bitLength="32"/>
+               <Name textId="TI_00ae36b7-e04d-4081-8a73-4ce72279890a"/>
+               <Description textId="TI_78840c6d-0713-4ec4-a4e0-61ee442b18f6"/>
+            </Variable>
+            <Variable id="V_Password"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="91">
+               <Datatype xsi:type="StringT" encoding="UTF-8" fixedLength="16"/>
+               <Name textId="TI_61819458-5c37-4816-8ab0-3934971d3710"/>
+               <Description textId="TI_ed34dd02-6fcf-48ce-9a08-5d5b0d577e94"/>
+            </Variable>
+            <Variable id="V_Q2OutputMode"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="92"
+                      defaultValue="0">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_a302d048-65d9-4c21-adcc-40a48bed43b5"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_82c08e22-2205-4cca-be29-660558d0a13f"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_3e4056b6-eec6-4e86-ae8d-4abc787c2e6c"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_e807a4cc-7e8b-4d20-bc2f-cb2802f469d3"/>
+               <Description textId="TI_f048017a-3579-4298-8c3d-39304639b7bd"/>
+            </Variable>
+            <Variable id="V_VmaLevelTh"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="93">
+               <Datatype xsi:type="UIntegerT" bitLength="16"/>
+               <Name textId="TI_aaf854f3-b886-4f08-a561-0ba610fc5dc6"/>
+               <Description textId="TI_51adab68-14ba-46cc-aa66-7f2176c6c8b8"/>
+            </Variable>
+            <Variable id="V_Q1NearFarCenter"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="true"
+                      modifiesOtherVariables="false"
+                      index="94">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_7cb7d676-ad18-4aa8-9785-082b2be7fbe1"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_d30da446-0310-4884-8f1e-40e0abbfcd83"/>
+               <Description textId="TI_20559749-d342-49d6-a979-658c7831f309"/>
+            </Variable>
+            <Variable id="V_Q2NearFarCenter"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="true"
+                      modifiesOtherVariables="false"
+                      index="95">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_0e4f4f94-5380-4464-af95-4c75090ee416"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_441e3e8c-1b8a-45a1-a082-c1db9c3e30fa"/>
+               <Description textId="TI_be8dcf32-a2e5-427c-b09c-9a969df56e2a"/>
+            </Variable>
+            <Variable id="V_QaNearFarCenter"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="true"
+                      modifiesOtherVariables="false"
+                      index="96">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="50" upperValue="50000">
+                     <Name textId="TI_f9f26f2c-cff0-45d3-9638-6f40ecd2733c"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_b3a0786f-bf01-4b5e-8881-8f6cd925f06f"/>
+               <Description textId="TI_f7d5f6f8-ce11-41e5-8148-00a99ffa7cf2"/>
+            </Variable>
+            <Variable id="V_QdelayMode"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="97">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_2428ae64-1694-47dc-b0c6-96e24f345037"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_2bfc0a8d-ec13-4432-8eef-d90bbaa48748"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_f42b96c5-ba90-4fd0-8d30-09a4af023d5a"/>
+                  </SingleValue>
+                  <SingleValue value="3">
+                     <Name textId="TI_b35f5e62-7431-4ee3-a02b-0ee45f7ca917"/>
+                  </SingleValue>
+                  <SingleValue value="4">
+                     <Name textId="TI_053ef9d4-283b-4ba5-8750-cb1fc47df500"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_e583cbe3-0501-4c2d-99ff-08e74fcd1d3f"/>
+               <Description textId="TI_77771832-4cad-4cd8-91b0-c35b618d0f8f"/>
+            </Variable>
+            <Variable id="V_QdelayModeTime"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="98">
+               <Datatype xsi:type="UIntegerT" bitLength="8"/>
+               <Name textId="TI_20b03947-8fba-43bf-877e-a5d5facb542c"/>
+               <Description textId="TI_de695de3-abf9-4c91-8c12-bfcd93e88a19"/>
+            </Variable>
+            <Variable id="V_MFConfig"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="99">
+               <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="8">
+                  <RecordItem bitOffset="0" subindex="1">
+                     <SimpleDatatype xsi:type="BooleanT">
+                        <SingleValue value="false">
+                           <Name textId="TI_0eec6742-b247-4a39-bb16-edb8bd229207"/>
+                        </SingleValue>
+                        <SingleValue value="true">
+                           <Name textId="TI_da95653c-2f20-4c28-a22b-6609dc1cb7c3"/>
+                        </SingleValue>
+                     </SimpleDatatype>
+                     <Name textId="TI_ebb8c061-e0ff-46c1-bd04-e4af4562a62e"/>
+                  </RecordItem>
+                  <RecordItem bitOffset="1" subindex="2">
+                     <SimpleDatatype xsi:type="BooleanT">
+                        <SingleValue value="false">
+                           <Name textId="TI_ac2e8b8f-8372-4a66-b7e7-a40debc9bb84"/>
+                        </SingleValue>
+                        <SingleValue value="true">
+                           <Name textId="TI_abae3275-2fb0-4958-b6b7-29534d5092e6"/>
+                        </SingleValue>
+                     </SimpleDatatype>
+                     <Name textId="TI_065e18e8-e8e5-41ba-aa41-66f66846de66"/>
+                  </RecordItem>
+               </Datatype>
+               <RecordItemInfo defaultValue="1"
+                               excludedFromDataStorage="false"
+                               modifiesOtherVariables="false"
+                               subindex="1"/>
+               <RecordItemInfo defaultValue="0"
+                               excludedFromDataStorage="false"
+                               modifiesOtherVariables="false"
+                               subindex="2"/>
+               <Name textId="TI_ef4543cb-2186-4183-887d-3916058b0b3a"/>
+               <Description textId="TI_d54f5cc4-8e06-4c8e-82a8-87b3f98070fe"/>
+            </Variable>
+            <Variable id="V_HardwareVersion"
+                      accessRights="ro"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="100">
+               <Datatype xsi:type="StringT" encoding="UTF-8" fixedLength="8"/>
+               <Name textId="TI_3e091481-d3a5-4ceb-8f5b-1464737f9e4c"/>
+            </Variable>
+            <Variable id="V_FirmwareVersion"
+                      accessRights="ro"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="101">
+               <Datatype xsi:type="StringT" encoding="UTF-8" fixedLength="12"/>
+               <Name textId="TI_be316f15-fb7c-45ab-8bd2-5f8b68dc3cf2"/>
+            </Variable>
+            <Variable id="V_Revision"
+                      accessRights="ro"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="102">
+               <Datatype xsi:type="UIntegerT" bitLength="32"/>
+               <Name textId="TI_dc6f3efa-112b-4c38-8a04-3bcf05a6aa31"/>
+               <Description textId="TI_8a1d4c5e-9ddb-4e21-9ba6-ddfa38fd9bf3"/>
+            </Variable>
+            <Variable id="V_ResponseTime"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="true"
+                      index="103"
+                      defaultValue="2">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_d8abad4d-977a-4c96-8a44-a020161cb65d"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_85a5c768-8a2d-43fa-8973-e14e22a923ab"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_3323d70d-2fd9-4bab-a466-397b0479843d"/>
+                  </SingleValue>
+                  <SingleValue value="3">
+                     <Name textId="TI_bcc3a64f-0f44-4454-838f-fc79f68381bd"/>
+                  </SingleValue>
+                  <SingleValue value="4">
+                     <Name textId="TI_7b5ddc94-ab70-455e-ad19-acb228acb0d9"/>
+                  </SingleValue>
+                  <SingleValue value="5">
+                     <Name textId="TI_ecdea812-fd27-493e-b64a-4e10d5c9f644"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_53a72909-078e-426e-87a0-cc21e10b863d"/>
+               <Description textId="TI_8c0098a3-11de-4faa-8c4c-e07105e0653a"/>
+            </Variable>
+            <Variable id="V_AlarmConfig"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="104">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_c65790e4-f2d6-497e-9d8e-cf84aa4aa4cc"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_07cfb75d-fe5c-4853-9a70-67963128fb54"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_1aeb7798-9b2a-46aa-8d14-b6640d7dd5aa"/>
+               <Description textId="TI_e7c3cf5d-cc72-4be9-bc4b-7cc926b6cb64"/>
+            </Variable>
+            <Variable id="V_ProcessDataResolution"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="105"
+                      defaultValue="1">
+               <Datatype xsi:type="UIntegerT" bitLength="8">
+                  <SingleValue value="0">
+                     <Name textId="TI_84cac41b-594b-4753-afae-4dba2c799ed8"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_878c21dd-c1fc-4166-b575-cfcb92d29781"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_140afedd-ae9d-4942-bd19-36af857a9716"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_52ac3ebe-1ba1-4941-b7e7-c730851b66aa"/>
+               <Description textId="TI_ad1603f9-0bf8-4585-ab40-328cb381bf1b"/>
+            </Variable>
+            <Variable id="V_OffsetDistance"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="106">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="0" upperValue="50000">
+                     <Name textId="TI_22528c0c-60de-4df0-ae4b-26c09267c5e4"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_b203f049-da62-4709-98be-2543b628ff08"/>
+               <Description textId="TI_3a18bb7f-0134-4e24-a08e-3a2efd55e032"/>
+            </Variable>
+            <Variable id="V_ProcessDataNormalization"
+                      accessRights="rw"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="107">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <ValueRange lowerValue="0" upperValue="50000">
+                     <Name textId="TI_775e374e-051d-4970-8745-4a7ac73709d0"/>
+                  </ValueRange>
+               </Datatype>
+               <Name textId="TI_d7f3cd99-f790-488f-a66a-ad58f6e407c8"/>
+               <Description textId="TI_0ebde357-c673-4130-a9f5-98f86fb758d6"/>
+            </Variable>
+            <Variable id="M_Teach"
+                      accessRights="wo"
+                      dynamic="false"
+                      excludedFromDataStorage="false"
+                      modifiesOtherVariables="false"
+                      index="130">
+               <Datatype xsi:type="UIntegerT" bitLength="16">
+                  <SingleValue value="0">
+                     <Name textId="TI_f174e62a-18e4-412d-b787-e4368faa0da1"/>
+                  </SingleValue>
+                  <SingleValue value="1">
+                     <Name textId="TI_9857ba5d-ee13-4966-90e6-9dad9f8dc6ca"/>
+                  </SingleValue>
+                  <SingleValue value="2">
+                     <Name textId="TI_e678968f-c530-4b58-a0d4-fc07bd0a8213"/>
+                  </SingleValue>
+                  <SingleValue value="3">
+                     <Name textId="TI_f417e3d5-e777-4df1-a880-b14a58c5d38e"/>
+                  </SingleValue>
+                  <SingleValue value="4">
+                     <Name textId="TI_e7f3e008-b62f-427c-b8f2-04784f92c71c"/>
+                  </SingleValue>
+                  <SingleValue value="5">
+                     <Name textId="TI_cdc653d2-84cb-4f0d-ae25-8eb2e8899ddb"/>
+                  </SingleValue>
+                  <SingleValue value="6">
+                     <Name textId="TI_70aeffe9-175f-4998-91c3-8dbc4b524048"/>
+                  </SingleValue>
+                  <SingleValue value="7">
+                     <Name textId="TI_6718d657-b2c0-4269-a53d-c8299dd15baa"/>
+                  </SingleValue>
+                  <SingleValue value="8">
+                     <Name textId="TI_8471e1cc-c848-4024-bd6c-dca01396b48e"/>
+                  </SingleValue>
+                  <SingleValue value="9">
+                     <Name textId="TI_e572c62c-c852-4e06-8154-206ecd3e5b3d"/>
+                  </SingleValue>
+                  <SingleValue value="10">
+                     <Name textId="TI_11279a07-b4e6-4e2b-bbca-16798120cba7"/>
+                  </SingleValue>
+                  <SingleValue value="11">
+                     <Name textId="TI_478a593d-bb26-4114-9e29-681e6fd43f2e"/>
+                  </SingleValue>
+                  <SingleValue value="12">
+                     <Name textId="TI_a1cfd2e8-04d1-4ac5-a394-967c93b844e7"/>
+                  </SingleValue>
+                  <SingleValue value="13">
+                     <Name textId="TI_30ab912d-99f3-43bf-94a1-cc2bc21433b3"/>
+                  </SingleValue>
+                  <SingleValue value="14">
+                     <Name textId="TI_175b65ae-8925-43c0-9c59-5a7f4dda2cd1"/>
+                  </SingleValue>
+                  <SingleValue value="15">
+                     <Name textId="TI_be4fe041-a8b7-44b1-8499-2d75377c85d7"/>
+                  </SingleValue>
+                  <SingleValue value="16">
+                     <Name textId="TI_04e6f13b-98c6-4cee-b2b3-783b22f9cebd"/>
+                  </SingleValue>
+                  <SingleValue value="18">
+                     <Name textId="TI_2d91ea7c-a3a2-4eaa-87cd-9abcd575cdd1"/>
+                  </SingleValue>
+                  <SingleValue value="19">
+                     <Name textId="TI_3dea2b30-ec0d-46fe-b478-1b1a35cb5008"/>
+                  </SingleValue>
+                  <SingleValue value="20">
+                     <Name textId="TI_60b3d4d3-cae3-43f1-920a-9222b1f1cde2"/>
+                  </SingleValue>
+                  <SingleValue value="21">
+                     <Name textId="TI_43ce1589-e1a6-4124-8e5c-df48cee02078"/>
+                  </SingleValue>
+               </Datatype>
+               <Name textId="TI_e3fcade6-7e88-4162-80a6-683521d3516a"/>
+               <Description textId="TI_81fb87c3-c6cf-4477-bbf1-f3797bb3d606"/>
+            </Variable>
+         </VariableCollection>
+         <ProcessDataCollection>
+            <ProcessData id="PD_ProcessData1">
+               <Condition value="0" variableId="V_ProcessDataSelect"/>
+               <ProcessDataIn id="DI_04634dc0-92c1-4167-b539-f43b22c8e50d" bitLength="16">
+                  <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="16">
+                     <RecordItem bitOffset="0" subindex="1">
+                        <SimpleDatatype xsi:type="BooleanT">
+                           <SingleValue value="true">
+                              <Name textId="TI_1804b0e9-8198-46e2-ab43-b0a434e943c8"/>
+                           </SingleValue>
+                           <SingleValue value="false">
+                              <Name textId="TI_5d4fdffb-5392-44ae-a607-6ec6c87fed99"/>
+                           </SingleValue>
+                        </SimpleDatatype>
+                        <Name textId="TI_5fe405f2-d364-4ac7-8e57-46f21bb097a0"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="1" subindex="2">
+                        <SimpleDatatype xsi:type="BooleanT">
+                           <SingleValue value="true">
+                              <Name textId="TI_6c8faf1c-bd44-473c-bc1d-177bc12945fa"/>
+                           </SingleValue>
+                           <SingleValue value="false">
+                              <Name textId="TI_2d2a2373-89e5-4845-8715-f642737639ae"/>
+                           </SingleValue>
+                        </SimpleDatatype>
+                        <Name textId="TI_1d4b3114-ee95-496c-9cec-f678baf6702d"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="2" subindex="3">
+                        <SimpleDatatype xsi:type="UIntegerT" bitLength="14"/>
+                        <Name textId="TI_950356ca-e0b4-429f-8094-dd1ec54b61a4"/>
+                     </RecordItem>
+                  </Datatype>
+                  <Name textId="TI_8cb6995c-fce1-43fe-a970-fcf8293e76a1"/>
+               </ProcessDataIn>
+            </ProcessData>
+            <ProcessData id="PD_ProcessData2">
+               <Condition value="1" variableId="V_ProcessDataSelect"/>
+               <ProcessDataIn id="DI_ba1d0d42-2661-42a8-ad31-d70801132c17" bitLength="16">
+                  <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="16">
+                     <RecordItem bitOffset="0" subindex="1">
+                        <SimpleDatatype xsi:type="BooleanT">
+                           <SingleValue value="true">
+                              <Name textId="TI_b6a894d2-1842-4363-bd33-cdb88b3cfd9a"/>
+                           </SingleValue>
+                           <SingleValue value="false">
+                              <Name textId="TI_3bad88f2-e30b-41f6-9a6b-cef41bca5694"/>
+                           </SingleValue>
+                        </SimpleDatatype>
+                        <Name textId="TI_dddcd097-fa3c-431b-bbb9-1f6fe6b57153"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="1" subindex="2">
+                        <SimpleDatatype xsi:type="BooleanT">
+                           <SingleValue value="true">
+                              <Name textId="TI_58317c29-3950-4a56-b1c8-adcdc8ab54e3"/>
+                           </SingleValue>
+                           <SingleValue value="false">
+                              <Name textId="TI_e7db74e3-744b-481d-a717-2970a3182906"/>
+                           </SingleValue>
+                        </SimpleDatatype>
+                        <Name textId="TI_d44e776e-c9db-4539-9b44-7a1dddcf8c8c"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="2" subindex="3">
+                        <SimpleDatatype xsi:type="UIntegerT" bitLength="14"/>
+                        <Name textId="TI_e887cd07-fd67-4dc2-ac2e-a1facf8c1ed7"/>
+                     </RecordItem>
+                  </Datatype>
+                  <Name textId="TI_0bc3e572-302a-4c24-802d-dcc461623d2f"/>
+               </ProcessDataIn>
+            </ProcessData>
+            <ProcessData id="PD_ProcessData3">
+               <Condition value="2" variableId="V_ProcessDataSelect"/>
+               <ProcessDataIn id="DI_9fe86269-d896-4374-aa5b-8d099e115214" bitLength="16">
+                  <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="16">
+                     <RecordItem bitOffset="0" subindex="1">
+                        <SimpleDatatype xsi:type="BooleanT">
+                           <SingleValue value="true">
+                              <Name textId="TI_bc994897-378f-4be9-a0a0-89ba2e89f665"/>
+                           </SingleValue>
+                           <SingleValue value="false">
+                              <Name textId="TI_f76d93d1-f40c-4e1f-838a-35481510367c"/>
+                           </SingleValue>
+                        </SimpleDatatype>
+                        <Name textId="TI_7f93f528-29e4-4bb7-ac19-27387e765906"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="1" subindex="2">
+                        <SimpleDatatype xsi:type="BooleanT">
+                           <SingleValue value="true">
+                              <Name textId="TI_eaa9e35e-b2b8-4bea-82ef-068a09ab39ba"/>
+                           </SingleValue>
+                           <SingleValue value="false">
+                              <Name textId="TI_51144c24-635a-4afd-a768-644c56537e54"/>
+                           </SingleValue>
+                        </SimpleDatatype>
+                        <Name textId="TI_edb3b848-0f6e-4e0b-861a-eb3ac27b15f1"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="2" subindex="3">
+                        <SimpleDatatype xsi:type="UIntegerT" bitLength="14"/>
+                        <Name textId="TI_94b61f18-14a6-4f03-a504-d581be84e4ef"/>
+                     </RecordItem>
+                  </Datatype>
+                  <Name textId="TI_f56fbd12-af0f-4cf0-8bed-cbbc54721572"/>
+               </ProcessDataIn>
+            </ProcessData>
+            <ProcessData id="PD_ProcessData4">
+               <Condition value="3" variableId="V_ProcessDataSelect"/>
+               <ProcessDataIn id="DI_110a9910-63bc-4ec7-8255-2720872af670" bitLength="16">
+                  <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="16">
+                     <RecordItem bitOffset="0" subindex="1">
+                        <SimpleDatatype xsi:type="UIntegerT" bitLength="16"/>
+                        <Name textId="TI_10f2b51c-8722-492c-a58a-72f14ee85310"/>
+                     </RecordItem>
+                  </Datatype>
+                  <Name textId="TI_1da535b6-0243-45a7-a694-2c00b539ce39"/>
+               </ProcessDataIn>
+            </ProcessData>
+            <ProcessData id="PD_ProcessData5">
+               <Condition value="4" variableId="V_ProcessDataSelect"/>
+               <ProcessDataIn id="DI_0114f034-e2b6-483c-a8b3-50fb70f43b85" bitLength="16">
+                  <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="16">
+                     <RecordItem bitOffset="0" subindex="1">
+                        <SimpleDatatype xsi:type="UIntegerT" bitLength="2"/>
+                        <Name textId="TI_12eade65-be8e-4762-82da-e0138ba695a1"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="2" subindex="2">
+                        <SimpleDatatype xsi:type="UIntegerT" bitLength="14"/>
+                        <Name textId="TI_b5380d2c-fb31-432b-976e-50ad6319e779"/>
+                     </RecordItem>
+                  </Datatype>
+                  <Name textId="TI_37691ed8-db86-4e58-8194-2334bcdc226a"/>
+               </ProcessDataIn>
+            </ProcessData>
+            <ProcessData id="PD_ProcessData6">
+               <Condition value="5" variableId="V_ProcessDataSelect"/>
+               <ProcessDataIn id="DI_5612f405-904e-4503-8ce5-0b28cd227323" bitLength="16">
+                  <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="16">
+                     <RecordItem bitOffset="0" subindex="1">
+                        <SimpleDatatype xsi:type="UIntegerT" bitLength="16"/>
+                        <Name textId="TI_00509547-adaf-4c48-b80e-b703798da8e8"/>
+                     </RecordItem>
+                  </Datatype>
+                  <Name textId="TI_f77d059b-c145-42f3-947d-8a770a06059f"/>
+               </ProcessDataIn>
+            </ProcessData>
+            <ProcessData id="PD_ProcessData7">
+               <Condition value="6" variableId="V_ProcessDataSelect"/>
+               <ProcessDataIn id="PDI_71467ca3-191e-4649-bac1-8a4b37fc8ad7" bitLength="16">
+                  <Datatype xsi:type="RecordT" subindexAccessSupported="false" bitLength="16">
+                     <RecordItem bitOffset="0" subindex="1">
+                        <SimpleDatatype xsi:type="BooleanT">
+                           <SingleValue value="true">
+                              <Name textId="TI_110d7b39-6aa9-4ac6-9b33-649b4f0bb667"/>
+                           </SingleValue>
+                           <SingleValue value="false">
+                              <Name textId="TI_62f1f950-243b-4de9-b084-db109f4c9255"/>
+                           </SingleValue>
+                        </SimpleDatatype>
+                        <Name textId="TI_5f49557e-36ac-4223-be18-fe8f2a4285a7"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="1" subindex="2">
+                        <SimpleDatatype xsi:type="BooleanT">
+                           <SingleValue value="true">
+                              <Name textId="TI_cd8d6d79-b34c-47f5-bd54-2f159c0b2e92"/>
+                           </SingleValue>
+                           <SingleValue value="false">
+                              <Name textId="TI_6d14757b-8c9f-4dbb-acff-0f31e8c8ad1b"/>
+                           </SingleValue>
+                        </SimpleDatatype>
+                        <Name textId="TI_d7abdb3f-0b5e-4be1-88b4-be061a427578"/>
+                     </RecordItem>
+                     <RecordItem bitOffset="2" subindex="3">
+                        <SimpleDatatype xsi:type="UIntegerT" bitLength="14"/>
+                        <Name textId="TI_9bc1d018-e9e2-45ba-8665-222704f2ec66"/>
+                     </RecordItem>
+                  </Datatype>
+                  <Name textId="TI_36be9369-3237-49d3-871c-315a3a1dcd99"/>
+               </ProcessDataIn>
+            </ProcessData>
+         </ProcessDataCollection>
+         <ErrorTypeCollection/>
+         <EventCollection>
+            <StdEventRef code="0"/>
+         </EventCollection>
+         <UserInterface>
+            <MenuCollection>
+               <Menu id="ME_parameter_specialist">
+                  <Name textId="TI_6b7e572b-5ff2-4c45-95c6-1f1467ac9692"/>
+                  <MenuRef menuId="ME_Q1"/>
+                  <MenuRef menuId="ME_Q2switching">
+                     <Condition value="2" variableId="V_Q2OutputMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q2analogCurrent">
+                     <Condition value="0" variableId="V_Q2OutputMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q2analogVoltage">
+                     <Condition value="1" variableId="V_Q2OutputMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Advanced"/>
+               </Menu>
+               <Menu id="ME_diagnose_specialist">
+                  <Name textId="TI_1c8ce072-b045-4629-9272-305395208847"/>
+                  <MenuRef menuId="ME_ExpertMode"/>
+               </Menu>
+               <Menu id="ME_identification_specialist">
+                  <Name textId="TI_101af035-93b6-4ffd-bf5f-fc7d196a6bec"/>
+                  <VariableRef variableId="V_VendorName"/>
+                  <VariableRef variableId="V_VendorText"/>
+                  <VariableRef variableId="V_ProductName"/>
+                  <VariableRef variableId="V_ProductID"/>
+                  <VariableRef variableId="V_SerialNumber"/>
+                  <VariableRef variableId="V_ApplicationSpecificTag"/>
+                  <VariableRef variableId="V_UserTag1"/>
+                  <VariableRef variableId="V_UserTag2"/>
+               </Menu>
+               <Menu id="ME_identification_observer">
+                  <Name textId="TI_3441384b-3d03-4e21-a8d6-03cf6acd6178"/>
+                  <VariableRef variableId="V_VendorName"/>
+                  <VariableRef variableId="V_VendorText"/>
+                  <VariableRef variableId="V_ProductName"/>
+                  <VariableRef variableId="V_ProductID"/>
+                  <VariableRef variableId="V_SerialNumber"/>
+                  <VariableRef variableId="V_ApplicationSpecificTag"/>
+                  <VariableRef variableId="V_UserTag1"/>
+                  <VariableRef variableId="V_UserTag2"/>
+               </Menu>
+               <Menu id="ME_diagnose_observer">
+                  <Name textId="TI_c9835331-98c2-46fd-96f5-e2cb34b03adc"/>
+                  <MenuRef menuId="ME_ExpertMode"/>
+               </Menu>
+               <Menu id="ME_parameter_observer">
+                  <Name textId="TI_44b111cf-0fcf-4b76-93dc-eb72bca01e6b"/>
+                  <MenuRef menuId="ME_Q1"/>
+                  <MenuRef menuId="ME_Q2switching"/>
+                  <MenuRef menuId="ME_Q2analogCurrent"/>
+                  <MenuRef menuId="ME_Q2analogVoltage"/>
+                  <MenuRef menuId="ME_Advanced"/>
+               </Menu>
+               <Menu id="ME_diagnose_maintenance">
+                  <Name textId="TI_ae19f8a6-698c-4602-9714-2e671957440d"/>
+                  <MenuRef menuId="ME_ExpertMode"/>
+               </Menu>
+               <Menu id="ME_parameter_maintenance">
+                  <Name textId="TI_df444a7a-d8a0-49d9-a241-90eb60474522"/>
+                  <MenuRef menuId="ME_Q1"/>
+                  <MenuRef menuId="ME_Q2switching"/>
+                  <MenuRef menuId="ME_Q2analogCurrent"/>
+                  <MenuRef menuId="ME_Q2analogVoltage"/>
+                  <MenuRef menuId="ME_Advanced"/>
+               </Menu>
+               <Menu id="ME_identification_maintenance">
+                  <Name textId="TI_0db5ef72-b217-4332-be99-143b5bf23a07"/>
+                  <VariableRef variableId="V_VendorName"/>
+                  <VariableRef variableId="V_VendorText"/>
+                  <VariableRef variableId="V_ProductName"/>
+                  <VariableRef variableId="V_ProductID"/>
+                  <VariableRef variableId="V_SerialNumber"/>
+                  <VariableRef variableId="V_ApplicationSpecificTag"/>
+                  <VariableRef variableId="V_UserTag1"/>
+                  <VariableRef variableId="V_UserTag2"/>
+               </Menu>
+               <Menu id="ME_Q1">
+                  <Name textId="TI_25fcfeef-b7a7-43d3-8fc5-100d6fa00bc5"/>
+                  <VariableRef variableId="V_Q1OpMode"/>
+                  <MenuRef menuId="ME_Q1_teach_parameters">
+                     <Condition value="0" variableId="V_Q1OpMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q1_window_parameters">
+                     <Condition value="2" variableId="V_Q1OpMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q1_OBSB_parameters">
+                     <Condition value="1" variableId="V_Q1OpMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q1VMA">
+                     <Condition value="3" variableId="V_Q1OpMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q1ALARM">
+                     <Condition value="4" variableId="V_Q1OpMode"/>
+                  </MenuRef>
+               </Menu>
+               <Menu id="ME_Q1_teach_parameters">
+                  <Name textId="TI_8a84f2ab-1258-4267-84c2-f9d3883c8127q2"/>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="0"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="18"/>
+                  </VariableRef>
+                  <VariableRef unitCode="1013" variableId="V_Q1ThresholdNear"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="1"/>
+               </Menu>
+               <Menu id="ME_Q2_teach_parameters">
+                  <Name textId="TI_c5a397d2-e386-46c5-bae5-be46e5a852ee"/>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="1"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="19"/>
+                  </VariableRef>
+                  <VariableRef unitCode="1013" variableId="V_Q2ThresholdNear"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="2"/>
+               </Menu>
+               <Menu id="ME_QA_mA_teach_parameters">
+                  <Name textId="TI_1491f336-5c8d-4917-983a-03ae2e1aab07"/>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="10"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="11"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="14"/>
+                  </VariableRef>
+                  <VariableRef unitCode="1013" variableId="V_QaLimitLow"/>
+                  <VariableRef unitCode="1013" variableId="V_QaLimitHigh"/>
+                  <VariableRef unitCode="1013" variableId="V_QaNearFarCenter"/>
+               </Menu>
+               <Menu id="ME_Q1_window_parameters">
+                  <Name textId="TI_ffa15436-6cc7-42ab-a891-f7bda620d530"/>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="2"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="3"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="4"/>
+                  </VariableRef>
+                  <VariableRef unitCode="1013" variableId="V_Q1ThresholdNear"/>
+                  <VariableRef unitCode="1013" variableId="V_Q1ThresholdFar"/>
+                  <VariableRef unitCode="1013" variableId="V_Q1NearFarCenter"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="1"/>
+               </Menu>
+               <Menu id="ME_Q2_window_parameters">
+                  <Name textId="TI_9358e390-e01c-461b-9811-baa893e2b935"/>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="5"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="6"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="7"/>
+                  </VariableRef>
+                  <VariableRef unitCode="1013" variableId="V_Q2ThresholdNear"/>
+                  <VariableRef unitCode="1013" variableId="V_Q2ThresholdFar"/>
+                  <VariableRef unitCode="1013" variableId="V_Q2NearFarCenter"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="2"/>
+               </Menu>
+               <Menu id="ME_Q1_OBSB_parameters">
+                  <Name textId="TI_e1e77d78-cb4d-4358-bdf2-1b26697600dc"/>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="8"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="20"/>
+                  </VariableRef>
+                  <VariableRef unitCode="1013" variableId="V_Q1ThresholdNear"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="1"/>
+               </Menu>
+               <Menu id="ME_Q2_OBSB_parameters">
+                  <Name textId="TI_553cc6f9-4394-4bf4-9614-179fba1fb83c"/>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="9"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="21"/>
+                  </VariableRef>
+                  <VariableRef unitCode="1013" variableId="V_Q2ThresholdNear"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="2"/>
+               </Menu>
+               <Menu id="ME_QA_V_teach_parameters">
+                  <Name textId="TI_76017cc1-7b7c-4d81-85af-e78e1709e05b"/>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="12"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="13"/>
+                  </VariableRef>
+                  <VariableRef accessRightRestriction="wo" variableId="M_Teach">
+                     <Button buttonValue="14"/>
+                  </VariableRef>
+                  <VariableRef unitCode="1013" variableId="V_QaLimitLow"/>
+                  <VariableRef unitCode="1013" variableId="V_QaLimitHigh"/>
+                  <VariableRef unitCode="1013" variableId="V_QaNearFarCenter"/>
+               </Menu>
+               <Menu id="ME_Advanced">
+                  <Name textId="TI_212cd897-645f-413d-bf2d-917a476950f0"/>
+                  <VariableRef variableId="V_OffsetDistance"/>
+                  <VariableRef variableId="V_ButtonLock"/>
+                  <VariableRef variableId="V_LaserSwitch"/>
+                  <VariableRef variableId="V_AlarmConfig"/>
+                  <MenuRef menuId="ME_MFconfiguration"/>
+                  <MenuRef menuId="ME_SwitchingHysteresisConfiguration"/>
+                  <MenuRef menuId="ME_Switchingdelayconfiguration"/>
+                  <MenuRef menuId="ME_ResponseTimeConfiguration"/>
+                  <MenuRef menuId="ME_ExpertResponsetimesettings">
+                     <Condition value="0" variableId="V_ResponseTime"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_FactoryReset"/>
+                  <MenuRef menuId="ME_ProcessDataconfiguration"/>
+                  <VariableRef variableId="V_DeviceAccessLocks"/>
+               </Menu>
+               <Menu id="ME_ExpertMode">
+                  <Name textId="TI_9973074b-87a1-4193-b526-935cf76d4efb"/>
+                  <VariableRef variableId="V_HardwareVersion"/>
+                  <VariableRef variableId="V_FirmwareVersion"/>
+                  <VariableRef variableId="V_Revision"/>
+                  <VariableRef variableId="V_Oes4Id"/>
+                  <VariableRef variableId="V_EkId"/>
+                  <VariableRef variableId="V_LdCharge"/>
+                  <VariableRef variableId="V_ErrorStatusLog"/>
+                  <VariableRef variableId="V_OperatingTime"/>
+               </Menu>
+               <Menu id="ME_Q2switching">
+                  <Name textId="TI_dc5077d6-b8be-4729-998b-be4c52f2474d"/>
+                  <VariableRef variableId="V_Q2OutputMode"/>
+                  <VariableRef variableId="V_Q2OpMode"/>
+                  <MenuRef menuId="ME_Q2_teach_parameters">
+                     <Condition value="0" variableId="V_Q2OpMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q2_window_parameters">
+                     <Condition value="2" variableId="V_Q2OpMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q2_OBSB_parameters">
+                     <Condition value="1" variableId="V_Q2OpMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q2VMA">
+                     <Condition value="3" variableId="V_Q2OpMode"/>
+                  </MenuRef>
+                  <MenuRef menuId="ME_Q2ALARM">
+                     <Condition value="4" variableId="V_Q2OpMode"/>
+                  </MenuRef>
+               </Menu>
+               <Menu id="ME_Q2analogCurrent">
+                  <Name textId="TI_b5b4fa1a-4ee4-489a-bd64-a0f1383a2882"/>
+                  <VariableRef variableId="V_Q2OutputMode"/>
+                  <MenuRef menuId="ME_QA_mA_teach_parameters"/>
+               </Menu>
+               <Menu id="ME_Q2analogVoltage">
+                  <Name textId="TI_78f22e61-97c9-41c9-a575-2b73fe70c7ba"/>
+                  <VariableRef variableId="V_Q2OutputMode"/>
+                  <MenuRef menuId="ME_QA_V_teach_parameters"/>
+               </Menu>
+               <Menu id="ME_Switchingdelayconfiguration">
+                  <Name textId="TI_d320b74f-d0dc-4a9a-9486-cebcd28ae244"/>
+                  <VariableRef variableId="V_QdelayMode"/>
+                  <VariableRef unitCode="1056" variableId="V_QdelayModeTime"/>
+               </Menu>
+               <Menu id="ME_Q2VMA">
+                  <Name textId="TI_1f8531e9-d795-47c4-8f29-f4bbc2b5b81e"/>
+                  <VariableRef variableId="V_VmaLevelTh"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="2"/>
+               </Menu>
+               <Menu id="ME_ProcessDataconfiguration">
+                  <Name textId="TI_27856a05-d18f-43e3-b70e-36ca4314820b"/>
+                  <VariableRef variableId="V_ProcessDataSelect"/>
+                  <VariableRef variableId="V_ProcessDataResolution"/>
+                  <VariableRef unitCode="1013" variableId="V_ProcessDataNormalization"/>
+               </Menu>
+               <Menu id="ME_MFconfiguration">
+                  <Name textId="TI_74f84da5-6467-4364-80f8-33f86e0f42d9"/>
+                  <VariableRef variableId="V_MfSetting"/>
+                  <RecordItemRef variableId="V_MFConfig" subindex="1"/>
+                  <RecordItemRef variableId="V_MFConfig" subindex="2"/>
+               </Menu>
+               <Menu id="ME_ExpertResponsetimesettings">
+                  <Name textId="TI_5900167c-ee98-4bf6-b6f6-bdab6efa834f"/>
+                  <VariableRef variableId="V_MeasInt"/>
+                  <VariableRef variableId="V_QBitFilter"/>
+                  <VariableRef variableId="V_PostFilter"/>
+               </Menu>
+               <Menu id="ME_ResponseTimeConfiguration">
+                  <Name textId="TI_7bb8c86f-9bc4-49ce-bf95-d912e12ade92"/>
+                  <VariableRef variableId="V_ResponseTime"/>
+               </Menu>
+               <Menu id="ME_FactoryReset">
+                  <Name textId="TI_0049390e-6632-4cc5-a13f-defc82be5a3d"/>
+                  <VariableRef accessRightRestriction="wo" variableId="V_SystemCommand">
+                     <Button buttonValue="130"/>
+                  </VariableRef>
+               </Menu>
+               <Menu id="ME_SwitchingHysteresisConfiguration">
+                  <Name textId="TI_6d45b09c-b7af-45e6-8a23-7586b74f3f9b"/>
+                  <VariableRef variableId="V_Q1HystNear"/>
+                  <VariableRef variableId="V_Q1HystFar"/>
+                  <VariableRef variableId="V_Q2HystNear"/>
+                  <VariableRef variableId="V_Q2HystFar"/>
+               </Menu>
+               <Menu id="ME_Q2ALARM">
+                  <Name textId="TI_292e4131-d4fd-4930-98b9-11d74de14870"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="2"/>
+               </Menu>
+               <Menu id="ME_Q1VMA">
+                  <Name textId="TI_755d0a7b-4cdf-4f30-8d8a-643af17b3889"/>
+                  <VariableRef variableId="V_VmaLevelTh"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="1"/>
+               </Menu>
+               <Menu id="ME_Q1ALARM">
+                  <Name textId="TI_63730cd8-f40e-437a-a116-75ba3af7449e"/>
+                  <RecordItemRef variableId="V_QSetting" subindex="1"/>
+               </Menu>
+            </MenuCollection>
+            <ObserverRoleMenuSet>
+               <IdentificationMenu menuId="ME_identification_observer"/>
+               <ParameterMenu menuId="ME_parameter_observer"/>
+               <DiagnosisMenu menuId="ME_diagnose_observer"/>
+            </ObserverRoleMenuSet>
+            <MaintenanceRoleMenuSet>
+               <IdentificationMenu menuId="ME_identification_maintenance"/>
+               <ParameterMenu menuId="ME_parameter_maintenance"/>
+               <DiagnosisMenu menuId="ME_diagnose_maintenance"/>
+            </MaintenanceRoleMenuSet>
+            <SpecialistRoleMenuSet>
+               <IdentificationMenu menuId="ME_identification_specialist"/>
+               <ParameterMenu menuId="ME_parameter_specialist"/>
+               <DiagnosisMenu menuId="ME_diagnose_specialist"/>
+            </SpecialistRoleMenuSet>
+         </UserInterface>
+      </DeviceFunction>
+  </ProfileBody>
+  <CommNetworkProfile xsi:type="IOLinkCommNetworkProfileT"
+                       compatibleWith="V1.0"
+                       iolinkRevision="V1.1">
+      <TransportLayers>
+         <PhysicalLayer bitrate="COM2"
+                        minCycleTime="2300"
+                        mSequenceCapability="33"
+                        sioSupported="true">
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1062856"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_f8909037-571b-496f-b7de-aea7a6090415"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_4b6f70c3-2670-4292-9933-14df5b033d4d"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1068098"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_91177b06-6839-4e27-8a14-3c9c3f05574f"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_794b71bf-7cce-480f-abc4-203ad1b28ba8"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1057651"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_89782ad6-b000-4d16-92e6-b6178f36ec76"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_822f2104-4c99-40e9-b1e6-d4ee0a8701a1"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1057652"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_581d752f-542b-4015-bd59-75136af4157e"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_541c7f35-5313-40a6-a09a-62fb48ee0fb3"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1057653"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_111ab75a-1a7e-4ad4-a770-fd75dc6bd568"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_658b73d7-72e3-4ce1-ad0f-9cc688280e5f"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1057657"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_a30843ac-5eb6-4c67-90c8-79820abae8bb"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_dd55edfe-f205-4852-9806-3be461936372"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1057658"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_e4c61ccf-bdee-4fc7-a315-0a9a2ec4fc96"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_1fd9ea55-60db-440f-a195-8ee48e1beafd"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1066351"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_0ba57264-ab1a-4e47-bd6b-750461aab57f"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_4979b14e-679a-474a-978e-fdc9338a2479"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1077665"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_2f0bd352-4284-4edd-ae31-36d15c0c46ce"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_8aaa70eb-25da-44f3-9018-6199870aabcc"/>
+               </Wire5>
+            </Connection>
+            <Connection xsi:type="M12-5ConnectionT">
+               <ProductRef productId="1077666"/>
+               <Wire1 xsi:type="Wire1T" color="BN" function="L+"/>
+               <Wire2 color="WH" function="Other">
+                  <Name textId="TI_130e50c7-4bbb-42ce-bacd-fe4e02f215d4"/>
+               </Wire2>
+               <Wire3 xsi:type="Wire3T" color="BU" function="L-"/>
+               <Wire4 xsi:type="Wire4T" color="BK" function="C/Q"/>
+               <Wire5 color="GY" function="NC">
+                  <Name textId="TI_fdea2fd9-b442-4239-aa77-58c0aa5a950a"/>
+               </Wire5>
+            </Connection>
+         </PhysicalLayer>
+      </TransportLayers>
+      <Test>
+         <Config1 index="103" testValue="0x01"/>
+         <Config2 index="333" testValue="0xab,0xce"/>
+         <Config3 index="24"
+                  testValue="0x41,0x42,0x43,0x44,0x45,0x46,0x47,0x48,0x49,0x4a,0x4b,0x4c,0x4d,0x4e,0x4f,0x50"/>
+      </Test>
+  </CommNetworkProfile>
+  <ExternalTextCollection>
+      <PrimaryLanguage xml:lang="en">
+         <Text id="TI_VendorText" value="SICK Sensor Intelligence."/>
+         <Text id="TI_VendorUrl" value="http://www.sick.com"/>
+         <Text id="TI_DeviceFamily" value="Dx35 Family"/>
+         <Text id="TI_P789_Name" value="DT35-B15251S02"/>
+         <Text id="TI_P789_Text" value="1062856 (DT35-B15251S02 DX35-Extended)"/>
+         <Text id="TI_1eba0d0b-c622-4c07-a281-b7bb085e55e8" value="Q1 Hysteresis Far"/>
+         <Text id="TI_885df48a-a90c-4839-abc5-a66475aa76b4"
+               value="Integration Time Measurement"/>
+         <Text id="TI_314ad364-8f57-49b8-bf1d-43ded2bbda53" value="Q inversion"/>
+         <Text id="TI_fca773b6-cd97-4831-8922-73af9392957e" value="Q Bitfilter"/>
+         <Text id="TI_99dc3a23-e274-4395-ba21-75bc2c8fcec8"
+               value="Q1 Switching function"/>
+         <Text id="TI_139c2a93-00b9-4465-89ea-e78169d4d94b"
+               value="Q1 Switching point near"/>
+         <Text id="TI_d1f7a751-3184-4bd8-bdff-2e0fe1b58ee9" value="Q1 Hysteresis near"/>
+         <Text id="TI_930785bf-391e-4d6b-9c91-aa8ac1547965"
+               value="Q1 Switching point far"/>
+         <Text id="TI_2879e127-be6b-4c9e-bcdd-9bfbf3112560"
+               value="Q2 switching function"/>
+         <Text id="TI_df32f680-7936-4c0d-b315-f46911edacbd"
+               value="Q2 Switching point near"/>
+         <Text id="TI_07110c80-c498-41fa-93fa-1a045de921db" value="Q2 Hysteresis near"/>
+         <Text id="TI_c7a61531-ebaf-4189-aefc-87c6e29e4df9"
+               value="Q2 switching point far"/>
+         <Text id="TI_17f1212c-0da2-46fc-9837-b3641aacb23c" value="Q2 Analog near"/>
+         <Text id="TI_64236545-6d32-44e3-9e85-72578ee1ebed" value="Q2 Analog far"/>
+         <Text id="TI_b752121b-6198-403a-ba5c-3f8f19653364" value="MF Function"/>
+         <Text id="TI_d94a4f9d-4386-4b21-8dc0-01f1755807be" value="Keylock"/>
+         <Text id="TI_bb1dc305-ff1c-4c93-abe5-68af93b7aee0" value="DTO mode"/>
+         <Text id="TI_92f8cb99-8a61-4854-a501-385b588e465b" value="ObSB mode"/>
+         <Text id="TI_4cc22564-9e83-420b-9e54-5c43e2582364" value="WINDOW mode"/>
+         <Text id="TI_543deb6f-6093-4173-9456-70a3e83a7deb" value="DTO mode"/>
+         <Text id="TI_5c78b658-0e2c-412b-9b0a-f1d2e5f63f66" value="ObSB mode"/>
+         <Text id="TI_57c841ae-77fc-4d50-a0cc-af33512b4ff1" value="WINDOW mode"/>
+         <Text id="TI_87dddb68-583b-458d-a9b7-82e885ab9b5b" value="Q1 inversion"/>
+         <Text id="TI_429a16a8-f83a-490c-aea4-c027f4a2684b" value="inverted"/>
+         <Text id="TI_cdf51773-cbea-4d15-9e59-38e5be6257ec" value="non inverted"/>
+         <Text id="TI_12eaa370-73b1-44bd-8547-80d04ea60c44" value="Q2 inversion"/>
+         <Text id="TI_302c1cbf-c8d4-43c9-9746-5614e1c8e5ac" value="inverted"/>
+         <Text id="TI_d2a50ebd-7e1b-4e82-83f3-011424b613da" value="non inverted"/>
+         <Text id="TI_477edded-32b4-43e3-8f2a-b73cf74cc9d0" value="TEACH"/>
+         <Text id="TI_132a273a-53c7-4ae9-8d62-f0cb3d35da6e" value="Laser on/off"/>
+         <Text id="TI_3cc714f9-26b5-41c6-92cb-f521bddb42d3" value="MF OFF"/>
+         <Text id="TI_6b7e572b-5ff2-4c45-95c6-1f1467ac9692" value="Parameter Menu"/>
+         <Text id="TI_1c8ce072-b045-4629-9272-305395208847" value="Diagnosis Menu"/>
+         <Text id="TI_101af035-93b6-4ffd-bf5f-fc7d196a6bec"
+               value="Identification Menu"/>
+         <Text id="TI_3441384b-3d03-4e21-a8d6-03cf6acd6178"
+               value="Identification Menu"/>
+         <Text id="TI_c9835331-98c2-46fd-96f5-e2cb34b03adc" value="Diagnosis Menu"/>
+         <Text id="TI_44b111cf-0fcf-4b76-93dc-eb72bca01e6b" value="Parameter Menu"/>
+         <Text id="TI_ae19f8a6-698c-4602-9714-2e671957440d" value="Diagnosis Menu"/>
+         <Text id="TI_df444a7a-d8a0-49d9-a241-90eb60474522" value="Parameter Menu"/>
+         <Text id="TI_0db5ef72-b217-4332-be99-143b5bf23a07"
+               value="Identification Menu"/>
+         <Text id="TI_25fcfeef-b7a7-43d3-8fc5-100d6fa00bc5" value="Q1"/>
+         <Text id="TI_8cb6995c-fce1-43fe-a970-fcf8293e76a1" value="Process Data In"/>
+         <Text id="TI_8a84f2ab-1258-4267-84c2-f9d3883c8127q2"
+               value="Q1 DTO parameters"/>
+         <Text id="TI_e3fcade6-7e88-4162-80a6-683521d3516a" value="Teach"/>
+         <Text id="TI_81fb87c3-c6cf-4477-bbf1-f3797bb3d606"
+               value="Start a teach of selected type"/>
+         <Text id="TI_f174e62a-18e4-412d-b787-e4368faa0da1" value="Q1 DtO"/>
+         <Text id="TI_c5a397d2-e386-46c5-bae5-be46e5a852ee" value="Q2 DTO parameters"/>
+         <Text id="TI_2fdc0261-9cec-4e86-a941-bd3ed5c4f307" value="Q2 Hysteresis far"/>
+         <Text id="TI_0bc3e572-302a-4c24-802d-dcc461623d2f" value="Process Data In2"/>
+         <Text id="TI_77987834-202c-4c22-95ba-b8e8cdb0ac30"
+               value="Process Data Structure"/>
+         <Text id="TI_7852b293-b7b5-46a1-a6ce-c84a9042d9bd"
+               value="Process Data Structure"/>
+         <Text id="TI_de7159e6-a8c4-45cc-a74f-4f3950c7fd52" value="Distance + Q1 + Q2"/>
+         <Text id="TI_f42bd9fc-25fb-483e-9c39-012a04814f11"
+               value="Distance + VMA + Alarm"/>
+         <Text id="TI_7f1d3198-1bbe-4a58-b471-c4a5ab63ef23"
+               value="Level + VMA + Alarm"/>
+         <Text id="TI_f56fbd12-af0f-4cf0-8bed-cbbc54721572" value="Process Data In"/>
+         <Text id="TI_5fe405f2-d364-4ac7-8e57-46f21bb097a0" value="Q2"/>
+         <Text id="TI_1804b0e9-8198-46e2-ab43-b0a434e943c8" value="enabled"/>
+         <Text id="TI_5d4fdffb-5392-44ae-a607-6ec6c87fed99" value="disabled"/>
+         <Text id="TI_1d4b3114-ee95-496c-9cec-f678baf6702d" value="Q1"/>
+         <Text id="TI_6c8faf1c-bd44-473c-bc1d-177bc12945fa" value="enabled"/>
+         <Text id="TI_2d2a2373-89e5-4845-8715-f642737639ae" value="disabled"/>
+         <Text id="TI_950356ca-e0b4-429f-8094-dd1ec54b61a4" value="Distance"/>
+         <Text id="TI_dddcd097-fa3c-431b-bbb9-1f6fe6b57153" value="Alarm"/>
+         <Text id="TI_b6a894d2-1842-4363-bd33-cdb88b3cfd9a" value="yes"/>
+         <Text id="TI_3bad88f2-e30b-41f6-9a6b-cef41bca5694" value="no"/>
+         <Text id="TI_d44e776e-c9db-4539-9b44-7a1dddcf8c8c" value="VMA"/>
+         <Text id="TI_58317c29-3950-4a56-b1c8-adcdc8ab54e3" value="yes"/>
+         <Text id="TI_e7db74e3-744b-481d-a717-2970a3182906" value="no"/>
+         <Text id="TI_e887cd07-fd67-4dc2-ac2e-a1facf8c1ed7" value="Distance"/>
+         <Text id="TI_7f93f528-29e4-4bb7-ac19-27387e765906" value="Alarm"/>
+         <Text id="TI_bc994897-378f-4be9-a0a0-89ba2e89f665" value="yes"/>
+         <Text id="TI_f76d93d1-f40c-4e1f-838a-35481510367c" value="no"/>
+         <Text id="TI_edb3b848-0f6e-4e0b-861a-eb3ac27b15f1" value="VMA"/>
+         <Text id="TI_eaa9e35e-b2b8-4bea-82ef-068a09ab39ba" value="yes"/>
+         <Text id="TI_51144c24-635a-4afd-a768-644c56537e54" value="no"/>
+         <Text id="TI_94b61f18-14a6-4f03-a504-d581be84e4ef" value="Level"/>
+         <Text id="TI_9857ba5d-ee13-4966-90e6-9dad9f8dc6ca" value="Q2 DtO"/>
+         <Text id="TI_e678968f-c530-4b58-a0d4-fc07bd0a8213" value="Q1 Near"/>
+         <Text id="TI_f417e3d5-e777-4df1-a880-b14a58c5d38e" value="Q1 Far"/>
+         <Text id="TI_cdc653d2-84cb-4f0d-ae25-8eb2e8899ddb" value="Q2 Near"/>
+         <Text id="TI_70aeffe9-175f-4998-91c3-8dbc4b524048" value="Q2 Far"/>
+         <Text id="TI_8471e1cc-c848-4024-bd6c-dca01396b48e" value="Q1 ObSB"/>
+         <Text id="TI_e572c62c-c852-4e06-8154-206ecd3e5b3d" value="Q2 ObSB"/>
+         <Text id="TI_11279a07-b4e6-4e2b-bbca-16798120cba7" value="QA 4mA"/>
+         <Text id="TI_478a593d-bb26-4114-9e29-681e6fd43f2e" value="QA 20mA"/>
+         <Text id="TI_a1cfd2e8-04d1-4ac5-a394-967c93b844e7" value="QA 0V"/>
+         <Text id="TI_30ab912d-99f3-43bf-94a1-cc2bc21433b3" value="QA 10V"/>
+         <Text id="TI_1491f336-5c8d-4917-983a-03ae2e1aab07"
+               value="QA mA teach parameters"/>
+         <Text id="TI_ffa15436-6cc7-42ab-a891-f7bda620d530"
+               value="Q1 WINDOW parameters"/>
+         <Text id="TI_9358e390-e01c-461b-9811-baa893e2b935"
+               value="Q2 WINDOW parameters"/>
+         <Text id="TI_e1e77d78-cb4d-4358-bdf2-1b26697600dc" value="Q1 ObSB parameters"/>
+         <Text id="TI_553cc6f9-4394-4bf4-9614-179fba1fb83c" value="Q2 ObSB parameters"/>
+         <Text id="TI_76017cc1-7b7c-4d81-85af-e78e1709e05b"
+               value="QA V teach parameters"/>
+         <Text id="TI_212cd897-645f-413d-bf2d-917a476950f0" value="Advanced"/>
+         <Text id="TI_ad6b8042-25a0-48ae-bef6-d22fc0b83b37" value="Oes4Id"/>
+         <Text id="TI_5a41bdc4-25df-4a70-b657-ccbb066b5580" value="OES4 Version"/>
+         <Text id="TI_45dd4d2f-f478-476c-8caa-ed87627ab112" value="EkId"/>
+         <Text id="TI_be52d1c1-0561-4588-9543-ea8228d6e82b"
+               value="EK ID SerNum, DatCode"/>
+         <Text id="TI_f265f44a-40e3-484e-bced-bd12d66db7d6" value="LdCharge"/>
+         <Text id="TI_95758edc-66b9-4fff-809a-71a6e33fc027"
+               value="laser diode charge number"/>
+         <Text id="TI_3ec8a745-488f-44b8-b4d0-c9be4d13128a" value="Error Status Log"/>
+         <Text id="TI_5122e47c-0adc-4edb-97fd-72133a5c09bb" value="Error Status"/>
+         <Text id="TI_00ae36b7-e04d-4081-8a73-4ce72279890a" value="Operating Time"/>
+         <Text id="TI_78840c6d-0713-4ec4-a4e0-61ee442b18f6" value="Operating Time"/>
+         <Text id="TI_61819458-5c37-4816-8ab0-3934971d3710" value="Password"/>
+         <Text id="TI_ed34dd02-6fcf-48ce-9a08-5d5b0d577e94"
+               value="Password for access to advanced information"/>
+         <Text id="TI_9973074b-87a1-4193-b526-935cf76d4efb" value="Expert mode"/>
+         <Text id="TI_e807a4cc-7e8b-4d20-bc2f-cb2802f469d3" value="Q2 Output function"/>
+         <Text id="TI_f048017a-3579-4298-8c3d-39304639b7bd"
+               value="Configuration of the output mode for Q2"/>
+         <Text id="TI_3e4056b6-eec6-4e86-ae8d-4abc787c2e6c" value="switching"/>
+         <Text id="TI_a302d048-65d9-4c21-adcc-40a48bed43b5" value="4..20mA"/>
+         <Text id="TI_82c08e22-2205-4cca-be29-660558d0a13f" value="0..10V"/>
+         <Text id="TI_11701aa0-2ec7-4899-a414-f86e8d24aad5" value="VMA"/>
+         <Text id="TI_37ef24a2-b0f4-49ce-b166-b4f4a7741c88" value="Alarm"/>
+         <Text id="TI_dc5077d6-b8be-4729-998b-be4c52f2474d" value="Q2"/>
+         <Text id="TI_b5b4fa1a-4ee4-489a-bd64-a0f1383a2882" value="Q2"/>
+         <Text id="TI_78f22e61-97c9-41c9-a575-2b73fe70c7ba" value="Q2"/>
+         <Text id="TI_d30da446-0310-4884-8f1e-40e0abbfcd83"
+               value="Q1 near-far centering"/>
+         <Text id="TI_441e3e8c-1b8a-45a1-a082-c1db9c3e30fa"
+               value="Q2 near-Far centering"/>
+         <Text id="TI_b3a0786f-bf01-4b5e-8881-8f6cd925f06f"
+               value="Qa near-far centering"/>
+         <Text id="TI_e583cbe3-0501-4c2d-99ff-08e74fcd1d3f" value="Q delay Mode"/>
+         <Text id="TI_2428ae64-1694-47dc-b0c6-96e24f345037" value="disabled"/>
+         <Text id="TI_2bfc0a8d-ec13-4432-8eef-d90bbaa48748" value="ON delay"/>
+         <Text id="TI_20b03947-8fba-43bf-877e-a5d5facb542c" value="Q delay Time"/>
+         <Text id="TI_d320b74f-d0dc-4a9a-9486-cebcd28ae244"
+               value="Switching delay configuration"/>
+         <Text id="TI_1da535b6-0243-45a7-a694-2c00b539ce39" value="Process Data In"/>
+         <Text id="TI_37691ed8-db86-4e58-8194-2334bcdc226a" value="Process Data In"/>
+         <Text id="TI_12eade65-be8e-4762-82da-e0138ba695a1" value="Signal Quality"/>
+         <Text id="TI_b5380d2c-fb31-432b-976e-50ad6319e779" value="Distance"/>
+         <Text id="TI_9e95c887-7874-4cae-823a-dab1d4329b89" value="Distance"/>
+         <Text id="TI_2f997b32-5a5e-440c-89fc-8e2c9e5ac78f"
+               value="Distance + Signal Quality"/>
+         <Text id="TI_943ca78b-a1d1-4e96-b84b-fb3bb88f4b61" value="User Tag 1"/>
+         <Text id="TI_742690f7-c3a7-43c0-ba88-a8e852cf352f" value="User Tag 2"/>
+         <Text id="TI_2b225d59-da3d-4d16-bb99-f185cc3849cd" value="UserTag1"/>
+         <Text id="TI_dd1c2d38-337b-4f5c-9bbb-7d3390d188a8" value="UserTag2"/>
+         <Text id="TI_3e091481-d3a5-4ceb-8f5b-1464737f9e4c" value="Hardware Version"/>
+         <Text id="TI_be316f15-fb7c-45ab-8bd2-5f8b68dc3cf2" value="Firmware Version"/>
+         <Text id="TI_dc6f3efa-112b-4c38-8a04-3bcf05a6aa31" value="Revision"/>
+         <Text id="TI_8a1d4c5e-9ddb-4e21-9ba6-ddfa38fd9bf3"
+               value="Firmware Revision from version control"/>
+         <Text id="TI_e7f3e008-b62f-427c-b8f2-04784f92c71c" value="Q1 Center"/>
+         <Text id="TI_6718d657-b2c0-4269-a53d-c8299dd15baa" value="Q2 Center"/>
+         <Text id="TI_175b65ae-8925-43c0-9c59-5a7f4dda2cd1" value="QA Center"/>
+         <Text id="TI_10f2b51c-8722-492c-a58a-72f14ee85310" value="Distance"/>
+         <Text id="TI_f42b96c5-ba90-4fd0-8d30-09a4af023d5a" value="OFF delay"/>
+         <Text id="TI_b35f5e62-7431-4ee3-a02b-0ee45f7ca917" value="ON / OFF delay"/>
+         <Text id="TI_053ef9d4-283b-4ba5-8750-cb1fc47df500" value="One Shot"/>
+         <Text id="TI_ef4543cb-2186-4183-887d-3916058b0b3a" value="MF Configuration"/>
+         <Text id="TI_d54f5cc4-8e06-4c8e-82a8-87b3f98070fe"
+               value="Configure the behaviour of the MF input"/>
+         <Text id="TI_20841842-c5b2-4c03-8b4f-a6995aa2b917" value=""/>
+         <Text id="TI_e65709aa-e4fe-4176-abd0-8d86927a41a9" value=""/>
+         <Text id="TI_f5947a6d-ed3a-49db-8db6-7cee8c332a0b" value=""/>
+         <Text id="TI_f25800d7-a1fe-4c92-912f-56f85b40d326" value=""/>
+         <Text id="TI_c308d92a-8921-423e-8cb4-c920b914e530" value=""/>
+         <Text id="TI_18376b10-0e58-4b44-8732-8c6a1f47b173" value=""/>
+         <Text id="TI_7cb7d676-ad18-4aa8-9785-082b2be7fbe1" value=""/>
+         <Text id="TI_0e4f4f94-5380-4464-af95-4c75090ee416" value=""/>
+         <Text id="TI_f9f26f2c-cff0-45d3-9638-6f40ecd2733c" value=""/>
+         <Text id="TI_9b2b20bd-5316-4210-9f2e-aa7842db76a6" value="Laser on/off"/>
+         <Text id="TI_4c463520-84a4-4be2-a76c-1fd7dd762e6f"
+               value="Switch Laser On or Off"/>
+         <Text id="TI_49d7615e-2054-4ac1-be82-2a08dfa0ffa1" value="Off"/>
+         <Text id="TI_9eb93f48-0ecf-43fc-b8d9-1115979e1684" value="On"/>
+         <Text id="TI_ebb8c061-e0ff-46c1-bd04-e4af4562a62e" value="MF Polarity"/>
+         <Text id="TI_065e18e8-e8e5-41ba-aa41-66f66846de66"
+               value="MF Teach Confirmation on Q1"/>
+         <Text id="TI_da95653c-2f20-4c28-a22b-6609dc1cb7c3" value="active High"/>
+         <Text id="TI_0eec6742-b247-4a39-bb16-edb8bd229207" value="active Low"/>
+         <Text id="TI_abae3275-2fb0-4958-b6b7-29534d5092e6" value="on"/>
+         <Text id="TI_ac2e8b8f-8372-4a66-b7e7-a40debc9bb84" value="off"/>
+         <Text id="TI_aaf854f3-b886-4f08-a561-0ba610fc5dc6"
+               value="VMA level threshold"/>
+         <Text id="TI_51adab68-14ba-46cc-aa66-7f2176c6c8b8"
+               value="Configure the VMA level threshold - application dependent"/>
+         <Text id="TI_1f8531e9-d795-47c4-8f29-f4bbc2b5b81e" value="Q2 VMA parameters"/>
+         <Text id="TI_a4c37b1c-6220-4a00-82f9-f2455c15cf21"
+               value="default: max from spec"/>
+         <Text id="TI_27856a05-d18f-43e3-b70e-36ca4314820b"
+               value="Process Data configuration"/>
+         <Text id="TI_74f84da5-6467-4364-80f8-33f86e0f42d9" value="MF configuration"/>
+         <Text id="TI_53a72909-078e-426e-87a0-cc21e10b863d" value="Response Time"/>
+         <Text id="TI_d8abad4d-977a-4c96-8a44-a020161cb65d" value="Expert"/>
+         <Text id="TI_85a5c768-8a2d-43fa-8973-e14e22a923ab" value="super slow"/>
+         <Text id="TI_3323d70d-2fd9-4bab-a466-397b0479843d" value="slow"/>
+         <Text id="TI_bcc3a64f-0f44-4454-838f-fc79f68381bd" value="medium"/>
+         <Text id="TI_7b5ddc94-ab70-455e-ad19-acb228acb0d9" value="fast"/>
+         <Text id="TI_ecdea812-fd27-493e-b64a-4e10d5c9f644" value="super fast"/>
+         <Text id="TI_5900167c-ee98-4bf6-b6f6-bdab6efa834f"
+               value="Expert Response time settings"/>
+         <Text id="TI_7bb8c86f-9bc4-49ce-bf95-d912e12ade92"
+               value="Response Time Configuration"/>
+         <Text id="TI_0049390e-6632-4cc5-a13f-defc82be5a3d" value="Factory Reset"/>
+         <Text id="TI_6d45b09c-b7af-45e6-8a23-7586b74f3f9b"
+               value="Switching Hysteresis Configuration"/>
+         <Text id="TI_1aeb7798-9b2a-46aa-8d14-b6640d7dd5aa"
+               value="Alarm Configuration"/>
+         <Text id="TI_e7c3cf5d-cc72-4be9-bc4b-7cc926b6cb64"
+               value="Configures the sensor beahviour when an alarm happens (target out of range)"/>
+         <Text id="TI_c65790e4-f2d6-497e-9d8e-cf84aa4aa4cc" value="Clamp"/>
+         <Text id="TI_07cfb75d-fe5c-4853-9a70-67963128fb54" value="Hold"/>
+         <Text id="TI_7ebbb658-9dbb-43e6-aa93-fae504e70329" value="Averaging"/>
+         <Text id="TI_84af542f-3e0b-4988-af7f-b17c10379de4"
+               value="Average Filter for Distance Measurement"/>
+         <Text id="TI_52ac3ebe-1ba1-4941-b7e7-c730851b66aa"
+               value="Process Data Resolution (Distance)"/>
+         <Text id="TI_ad1603f9-0bf8-4585-ab40-328cb381bf1b"
+               value="Process Data Resolution (Distance)"/>
+         <Text id="TI_878c21dd-c1fc-4166-b575-cfcb92d29781" value="Distance in mm"/>
+         <Text id="TI_84cac41b-594b-4753-afae-4dba2c799ed8"
+               value="Distance in 1/10 mm"/>
+         <Text id="TI_b203f049-da62-4709-98be-2543b628ff08" value="Offset Distance"/>
+         <Text id="TI_3a18bb7f-0134-4e24-a08e-3a2efd55e032"
+               value="Offset Distance for calibrating 0mm location"/>
+         <Text id="TI_22528c0c-60de-4df0-ae4b-26c09267c5e4" value=""/>
+         <Text id="TI_3022068f-9b65-459c-bac3-fa0d78ec116e" value="OFF"/>
+         <Text id="TI_6a7787f6-8a0a-4851-bf22-1e8a05ea8437" value="Filter Depth 2"/>
+         <Text id="TI_654b135a-6f20-4ab8-9ab1-ef5087204476" value="Filter Depth 4"/>
+         <Text id="TI_3afc900e-4f3b-4f8e-8c05-f39079715a00" value="Filter Depth 8"/>
+         <Text id="TI_b8d08fca-ad6a-4ab1-86db-54147e03e1d8" value="Filter Depth 16"/>
+         <Text id="TI_41e8863f-c148-41e9-80fe-502051154f75"
+               value="Integration time (2^n) in milliseconds"/>
+         <Text id="TI_b07cdbe6-660e-4b3a-bbeb-8a28f95f1c24" value=""/>
+         <Text id="TI_292e4131-d4fd-4930-98b9-11d74de14870"
+               value="Q2 ALARM parameters"/>
+         <Text id="TI_d7f3cd99-f790-488f-a66a-ad58f6e407c8"
+               value="Process Data Normalization (Distance)"/>
+         <Text id="TI_0ebde357-c673-4130-a9f5-98f86fb758d6"
+               value="Normalization (Offset) of the process data (applies to distance only)"/>
+         <Text id="TI_775e374e-051d-4970-8745-4a7ac73709d0" value=""/>
+         <Text id="TI_32740fea-4ef0-4d71-a2a0-aa76d543ec0a" value="OFF"/>
+         <Text id="TI_471a9db2-0d7b-4454-a4cc-c275ddfae1eb" value="filter depth 2"/>
+         <Text id="TI_e02c59e4-8f29-4cff-bc42-8600207a2ba3" value="filter depth 4"/>
+         <Text id="TI_c2a55fed-5ed5-4fbb-8105-7db39f1a4e1b" value="filter depth 8"/>
+         <Text id="TI_92a35a15-476c-4b78-b8db-76e61d4f42c2" value="filter depth 16"/>
+         <Text id="TI_4fe0f8b8-9ff7-48ab-ba70-98e2dcf89c07" value="unlocked"/>
+         <Text id="TI_505c8091-afd9-4511-8a10-6ab387450230" value="locked"/>
+         <Text id="TI_140afedd-ae9d-4942-bd19-36af857a9716" value="Distance in 10 mm"/>
+         <Text id="TI_aec9f997-1b1d-4e15-bf6a-7f50d7a37560" value=""/>
+         <Text id="TI_2cd8b3d9-ff22-4210-b53f-114de5527e15" value=""/>
+         <Text id="TI_bb03e3f3-0445-4e6e-a207-d4f6f20bd372" value=""/>
+         <Text id="TI_2bc8f37a-cc3b-4882-9d37-a9f3b9601c2a" value=""/>
+         <Text id="TI_8c0098a3-11de-4faa-8c4c-e07105e0653a"
+               value="response time - dependent an laser class."/>
+         <Text id="TI_308d772c-adb0-4d3f-b77e-1aa98d570db5"
+               value="Configuration of switching output polarity"/>
+         <Text id="TI_3edb48ab-73e4-40d9-b845-e2ad54a476b4"
+               value="Length of debounce filter of switching outputs"/>
+         <Text id="TI_4e8d2c92-9236-43ca-bf09-bb00265b3a39"
+               value="Configuration of the switching mode for Q1"/>
+         <Text id="TI_ed532e6d-b841-41e8-afd3-b7b4e8d9760e"
+               value="Configure Hysteresis for Q1 near switching point"/>
+         <Text id="TI_4a156673-08e6-4043-95b4-5c7b792b2150"
+               value="Configure Hysteresis for Q1 far switching point"/>
+         <Text id="TI_7fadf6d2-6c4e-402c-923f-1dbb1c13efff"
+               value="Configure Hysteresis for Q2 near switching point"/>
+         <Text id="TI_312cbcf3-7a64-4e4d-87fa-db83168e1bbd"
+               value="Configure Hysteresis for Q2 far switching point"/>
+         <Text id="TI_448b1ef2-c50c-4a93-ab27-daf3c6321a00"
+               value="Configuration of the switching mode for Q2"/>
+         <Text id="TI_30add629-e4ee-446e-9dea-e8fbd139b44c"
+               value="Configure the functionality of the MF input"/>
+         <Text id="TI_e9d8d253-50ac-46fa-814f-4a367eb79dd2"
+               value="Lock or unlock the menu buttons"/>
+         <Text id="TI_20559749-d342-49d6-a979-658c7831f309"
+               value="Display or set the Q1 center position between near and far point - for Window mode only"/>
+         <Text id="TI_be8dcf32-a2e5-427c-b09c-9a969df56e2a"
+               value="Display or set the Q2 center position between near and far point - for Window mode only"/>
+         <Text id="TI_f7d5f6f8-ce11-41e5-8148-00a99ffa7cf2"
+               value="Display or set the Qa center position between near and far point"/>
+         <Text id="TI_77771832-4cad-4cd8-91b0-c35b618d0f8f"
+               value="Enable and select the switching output delay mode"/>
+         <Text id="TI_de695de3-abf9-4c91-8c12-bfcd93e88a19"
+               value="select the switching delay time in milli seconds"/>
+         <Text id="TI_f0538f74-a68c-4cf3-84e5-06adfd464327" value="VMA"/>
+         <Text id="TI_27e00ea0-3cf4-4649-b375-c413c39355bc" value="Alarm"/>
+         <Text id="TI_755d0a7b-4cdf-4f30-8d8a-643af17b3889" value="Q1 VMA parameters"/>
+         <Text id="TI_63730cd8-f40e-437a-a116-75ba3af7449e"
+               value="Q1 ALARM parameters"/>
+         <Text id="TI_be4fe041-a8b7-44b1-8499-2d75377c85d7" value="Teach Fine Plus"/>
+         <Text id="TI_04e6f13b-98c6-4cee-b2b3-783b22f9cebd" value="Teach Fine Minus"/>
+         <Text id="TI_7170057c-9422-4774-a189-3f3285b3805b" value="Timer"/>
+         <Text id="TI_f77d059b-c145-42f3-947d-8a770a06059f" value="Process Data In"/>
+         <Text id="TI_00509547-adaf-4c48-b80e-b703798da8e8" value="Timer Q1"/>
+         <Text id="TI_f54c5761-eea9-4abb-9a09-696460e3e014" value="DX35-Extended"/>
+         <Text id="TI_2d91ea7c-a3a2-4eaa-87cd-9abcd575cdd1" value="Q1 DtO Inv"/>
+         <Text id="TI_3dea2b30-ec0d-46fe-b478-1b1a35cb5008" value="Q2 DtO Inv"/>
+         <Text id="TI_60b3d4d3-cae3-43f1-920a-9222b1f1cde2" value="Q1 ObSB Inv"/>
+         <Text id="TI_43ce1589-e1a6-4124-8e5c-df48cee02078" value="Q2 ObSB Inv"/>
+         <Text id="TI_a92d6b63-dbea-483c-891a-608feb22255a" value="Timer + Q1 + Q2"/>
+         <Text id="TI_36be9369-3237-49d3-871c-315a3a1dcd99" value="Process Data In"/>
+         <Text id="TI_5f49557e-36ac-4223-be18-fe8f2a4285a7" value="Q2"/>
+         <Text id="TI_110d7b39-6aa9-4ac6-9b33-649b4f0bb667" value="enabled"/>
+         <Text id="TI_62f1f950-243b-4de9-b084-db109f4c9255" value="disabled"/>
+         <Text id="TI_d7abdb3f-0b5e-4be1-88b4-be061a427578" value="Q1"/>
+         <Text id="TI_cd8d6d79-b34c-47f5-bd54-2f159c0b2e92" value="enabled"/>
+         <Text id="TI_6d14757b-8c9f-4dbb-acff-0f31e8c8ad1b" value="disabled"/>
+         <Text id="TI_9bc1d018-e9e2-45ba-8665-222704f2ec66" value="Timer"/>
+         <Text id="TI_87fde69d-4486-49dd-89be-b042dc991743" value="DT35-B15551S04"/>
+         <Text id="TI_f60cf3f2-0ab7-4dd5-9b36-325845889b95"
+               value="1068098 (DT35-B15551S04 DX35-Extended)"/>
+         <Text id="TI_91177b06-6839-4e27-8a14-3c9c3f05574f" value="Q2 / Qa"/>
+         <Text id="TI_794b71bf-7cce-480f-abc4-203ad1b28ba8" value="MF"/>
+         <Text id="TI_f8909037-571b-496f-b7de-aea7a6090415" value="Q2 / Qa"/>
+         <Text id="TI_4b6f70c3-2670-4292-9933-14df5b033d4d" value="MF"/>
+         <Text id="TI_e5620e5c-3d82-4042-8fc7-fb2eb0985910" value="DT35-B15551"/>
+         <Text id="TI_a35494e8-e91a-4a4e-b5eb-f8a42e59074a"
+               value="1057651 (DT35-B15551 DX35-Extended)"/>
+         <Text id="TI_89782ad6-b000-4d16-92e6-b6178f36ec76" value="Q2 / Qa"/>
+         <Text id="TI_822f2104-4c99-40e9-b1e6-d4ee0a8701a1" value="MF"/>
+         <Text id="TI_afcb8eb4-2b9f-43ee-a77d-f6a010ba65b8" value="DT35-B15251"/>
+         <Text id="TI_2e884e95-6481-4ffc-86e8-b8d66a1cd0a1"
+               value="1057652 (DT35-B15251 DX35-Extended)"/>
+         <Text id="TI_581d752f-542b-4015-bd59-75136af4157e" value="Q2 / Qa"/>
+         <Text id="TI_541c7f35-5313-40a6-a09a-62fb48ee0fb3" value="MF"/>
+         <Text id="TI_44c86b2f-d64f-4966-80df-af7c3b82c2fe" value="DT35-B15851"/>
+         <Text id="TI_589bc78e-83a6-40da-8b2d-7b5849e06d58"
+               value="1057653 (DT35-B15851 DX35-Extended)"/>
+         <Text id="TI_111ab75a-1a7e-4ad4-a770-fd75dc6bd568" value="Q2 / Qa"/>
+         <Text id="TI_658b73d7-72e3-4ce1-ad0f-9cc688280e5f" value="MF"/>
+         <Text id="TI_4979b14e-679a-474a-978e-fdc9338a2479" value="MF"/>
+         <Text id="TI_1fd9ea55-60db-440f-a195-8ee48e1beafd" value="MF"/>
+         <Text id="TI_dd55edfe-f205-4852-9806-3be461936372" value="MF"/>
+         <Text id="TI_a30843ac-5eb6-4c67-90c8-79820abae8bb" value="Q2 / Qa"/>
+         <Text id="TI_e4c61ccf-bdee-4fc7-a315-0a9a2ec4fc96" value="Q2 / Qa"/>
+         <Text id="TI_0ba57264-ab1a-4e47-bd6b-750461aab57f" value="Q2 / Qa"/>
+         <Text id="TI_5105f378-0948-4a19-a436-fbd8896d923a" value="DL35-B15552"/>
+         <Text id="TI_df57798d-af13-437f-b3f0-42d000396fa8"
+               value="1057657 (DL35-B15552 DX35-Extended)"/>
+         <Text id="TI_bb80d888-2a4e-477d-afd5-96a51b09e5d0" value="DL35-B15852"/>
+         <Text id="TI_97bcee4c-452a-4af9-860e-c17d47ef0cf3"
+               value="1057658 (DL35-B15852 DX35-Extended)"/>
+         <Text id="TI_51c13b69-d05f-46c4-a9bf-f314cf41eca9" value="DT35-B10251S03"/>
+         <Text id="TI_60edc772-b550-489a-97f7-263b1df8846e"
+               value="1066351 (DT35-B10251S03 DX35-Extended)"/>
+         <Text id="TI_b15ffa47-b730-4f9b-98eb-c433310174ff" value="DT35-B15551S05"/>
+         <Text id="TI_170fbbe4-3add-4f0f-9676-b1f1a8585e43"
+               value="1077665 (DT35-B15551S05 DX35-Extended)"/>
+         <Text id="TI_b91880de-fba4-426e-85d2-de62898337be" value="DT35-B15551S06"/>
+         <Text id="TI_5b4a00b4-76d9-4417-8a99-d9202d58e44b"
+               value="1077666 (DT35-B15551S06 DX35-Extended)"/>
+         <Text id="TI_2f0bd352-4284-4edd-ae31-36d15c0c46ce" value="Q2 / Qa"/>
+         <Text id="TI_8aaa70eb-25da-44f3-9018-6199870aabcc" value="MF"/>
+         <Text id="TI_130e50c7-4bbb-42ce-bacd-fe4e02f215d4" value="Q2 / Qa"/>
+         <Text id="TI_fdea2fd9-b442-4239-aa77-58c0aa5a950a" value="MF"/>
+      </PrimaryLanguage>
+      <Language xml:lang="de">
+         <Text id="TI_VendorText" value="SICK Sensor Intelligence."/>
+         <Text id="TI_VendorUrl" value="http://www.sick.de"/>
+         <Text id="TI_DeviceFamily" value="Dx35 Familie"/>
+         <Text id="TI_P789_Name" value="DT35-B15251S02"/>
+         <Text id="TI_P789_Text" value="1062856 (DT35-B15251S02 DX35-Extended)"/>
+         <Text id="TI_1eba0d0b-c622-4c07-a281-b7bb085e55e8" value="Q1 Hysterese fern"/>
+         <Text id="TI_885df48a-a90c-4839-abc5-a66475aa76b4"
+               value="Integrationszeit Messung"/>
+         <Text id="TI_314ad364-8f57-49b8-bf1d-43ded2bbda53" value="Q Invertierung"/>
+         <Text id="TI_fca773b6-cd97-4831-8922-73af9392957e" value="Q Bit-Filter"/>
+         <Text id="TI_99dc3a23-e274-4395-ba21-75bc2c8fcec8" value="Q1 Schaltfunktion"/>
+         <Text id="TI_139c2a93-00b9-4465-89ea-e78169d4d94b" value="Q1 Schaltpunkt nah"/>
+         <Text id="TI_d1f7a751-3184-4bd8-bdff-2e0fe1b58ee9" value="Q1 Hysterese nah"/>
+         <Text id="TI_930785bf-391e-4d6b-9c91-aa8ac1547965"
+               value="Q1 Schaltpunkt fern"/>
+         <Text id="TI_2879e127-be6b-4c9e-bcdd-9bfbf3112560" value="Q2 Schaltfunktion"/>
+         <Text id="TI_df32f680-7936-4c0d-b315-f46911edacbd" value="Q2 Schaltpunkt nah"/>
+         <Text id="TI_07110c80-c498-41fa-93fa-1a045de921db" value="Q2 Hysterese nah"/>
+         <Text id="TI_c7a61531-ebaf-4189-aefc-87c6e29e4df9"
+               value="Q2 Schaltpunkt fern"/>
+         <Text id="TI_17f1212c-0da2-46fc-9837-b3641aacb23c" value="Q2 Analog nah"/>
+         <Text id="TI_64236545-6d32-44e3-9e85-72578ee1ebed" value="Q2 Analog fern"/>
+         <Text id="TI_b752121b-6198-403a-ba5c-3f8f19653364" value="MF Funktion"/>
+         <Text id="TI_d94a4f9d-4386-4b21-8dc0-01f1755807be" value="Tastensperre"/>
+         <Text id="TI_bb1dc305-ff1c-4c93-abe5-68af93b7aee0" value="DTO Modus"/>
+         <Text id="TI_92f8cb99-8a61-4854-a501-385b588e465b" value="ObSB Modus"/>
+         <Text id="TI_4cc22564-9e83-420b-9e54-5c43e2582364" value="WINDOW Modus"/>
+         <Text id="TI_543deb6f-6093-4173-9456-70a3e83a7deb" value="DTO Modus"/>
+         <Text id="TI_5c78b658-0e2c-412b-9b0a-f1d2e5f63f66" value="ObSB Modus"/>
+         <Text id="TI_57c841ae-77fc-4d50-a0cc-af33512b4ff1" value="WINDOW Modus"/>
+         <Text id="TI_87dddb68-583b-458d-a9b7-82e885ab9b5b" value="Q1 Invertierung"/>
+         <Text id="TI_429a16a8-f83a-490c-aea4-c027f4a2684b" value="invertiert"/>
+         <Text id="TI_cdf51773-cbea-4d15-9e59-38e5be6257ec" value="nicht invertiert"/>
+         <Text id="TI_12eaa370-73b1-44bd-8547-80d04ea60c44" value="Q2 Invertierung"/>
+         <Text id="TI_302c1cbf-c8d4-43c9-9746-5614e1c8e5ac" value="invertiert"/>
+         <Text id="TI_d2a50ebd-7e1b-4e82-83f3-011424b613da" value="nicht invertiert"/>
+         <Text id="TI_477edded-32b4-43e3-8f2a-b73cf74cc9d0" value="TEACH"/>
+         <Text id="TI_132a273a-53c7-4ae9-8d62-f0cb3d35da6e" value="Laser an/aus"/>
+         <Text id="TI_3cc714f9-26b5-41c6-92cb-f521bddb42d3" value="MF OFF"/>
+         <Text id="TI_6b7e572b-5ff2-4c45-95c6-1f1467ac9692" value="Parameter Menu"/>
+         <Text id="TI_1c8ce072-b045-4629-9272-305395208847" value="Diagnosis Menu"/>
+         <Text id="TI_101af035-93b6-4ffd-bf5f-fc7d196a6bec"
+               value="Identification Menu"/>
+         <Text id="TI_3441384b-3d03-4e21-a8d6-03cf6acd6178"
+               value="Identification Menu"/>
+         <Text id="TI_c9835331-98c2-46fd-96f5-e2cb34b03adc" value="Diagnosis Menu"/>
+         <Text id="TI_44b111cf-0fcf-4b76-93dc-eb72bca01e6b" value="Parameter Menu"/>
+         <Text id="TI_ae19f8a6-698c-4602-9714-2e671957440d" value="Diagnosis Menu"/>
+         <Text id="TI_df444a7a-d8a0-49d9-a241-90eb60474522" value="Parameter Menu"/>
+         <Text id="TI_0db5ef72-b217-4332-be99-143b5bf23a07"
+               value="Identification Menu"/>
+         <Text id="TI_25fcfeef-b7a7-43d3-8fc5-100d6fa00bc5" value="Q1"/>
+         <Text id="TI_8cb6995c-fce1-43fe-a970-fcf8293e76a1" value="Process Data In"/>
+         <Text id="TI_8a84f2ab-1258-4267-84c2-f9d3883c8127q2" value="Q1 DTO Parameter"/>
+         <Text id="TI_e3fcade6-7e88-4162-80a6-683521d3516a" value="Teach"/>
+         <Text id="TI_81fb87c3-c6cf-4477-bbf1-f3797bb3d606" value="Teach Methode"/>
+         <Text id="TI_f174e62a-18e4-412d-b787-e4368faa0da1" value="Q1 DTO"/>
+         <Text id="TI_c5a397d2-e386-46c5-bae5-be46e5a852ee" value="Q2 DTO parameter"/>
+         <Text id="TI_2fdc0261-9cec-4e86-a941-bd3ed5c4f307" value="Q2 Hystrese fern"/>
+         <Text id="TI_0bc3e572-302a-4c24-802d-dcc461623d2f" value="Process Data In2"/>
+         <Text id="TI_77987834-202c-4c22-95ba-b8e8cdb0ac30"
+               value="Prozessdatenstruktur"/>
+         <Text id="TI_7852b293-b7b5-46a1-a6ce-c84a9042d9bd"
+               value="Prozessdatenstruktur"/>
+         <Text id="TI_de7159e6-a8c4-45cc-a74f-4f3950c7fd52" value="Distanz + Q1 + Q2"/>
+         <Text id="TI_f42bd9fc-25fb-483e-9c39-012a04814f11"
+               value="Distanz + VMA + Alarm"/>
+         <Text id="TI_7f1d3198-1bbe-4a58-b471-c4a5ab63ef23"
+               value="Pegel + VMA + Alarm"/>
+         <Text id="TI_f56fbd12-af0f-4cf0-8bed-cbbc54721572" value="Process Data In"/>
+         <Text id="TI_5fe405f2-d364-4ac7-8e57-46f21bb097a0" value="Q2"/>
+         <Text id="TI_1804b0e9-8198-46e2-ab43-b0a434e943c8" value="aktiv"/>
+         <Text id="TI_5d4fdffb-5392-44ae-a607-6ec6c87fed99" value="inaktiv"/>
+         <Text id="TI_1d4b3114-ee95-496c-9cec-f678baf6702d" value="Q1"/>
+         <Text id="TI_6c8faf1c-bd44-473c-bc1d-177bc12945fa" value="aktiv"/>
+         <Text id="TI_2d2a2373-89e5-4845-8715-f642737639ae" value="inaktiv"/>
+         <Text id="TI_950356ca-e0b4-429f-8094-dd1ec54b61a4" value="Distanz"/>
+         <Text id="TI_dddcd097-fa3c-431b-bbb9-1f6fe6b57153" value="Alarm"/>
+         <Text id="TI_b6a894d2-1842-4363-bd33-cdb88b3cfd9a" value="ja"/>
+         <Text id="TI_3bad88f2-e30b-41f6-9a6b-cef41bca5694" value="nein"/>
+         <Text id="TI_d44e776e-c9db-4539-9b44-7a1dddcf8c8c" value="VMA"/>
+         <Text id="TI_58317c29-3950-4a56-b1c8-adcdc8ab54e3" value="ja"/>
+         <Text id="TI_e7db74e3-744b-481d-a717-2970a3182906" value="nein"/>
+         <Text id="TI_e887cd07-fd67-4dc2-ac2e-a1facf8c1ed7" value="Distanz"/>
+         <Text id="TI_7f93f528-29e4-4bb7-ac19-27387e765906" value="Alarm"/>
+         <Text id="TI_bc994897-378f-4be9-a0a0-89ba2e89f665" value="ja"/>
+         <Text id="TI_f76d93d1-f40c-4e1f-838a-35481510367c" value="nein"/>
+         <Text id="TI_edb3b848-0f6e-4e0b-861a-eb3ac27b15f1" value="VMA"/>
+         <Text id="TI_eaa9e35e-b2b8-4bea-82ef-068a09ab39ba" value="ja"/>
+         <Text id="TI_51144c24-635a-4afd-a768-644c56537e54" value="nein"/>
+         <Text id="TI_94b61f18-14a6-4f03-a504-d581be84e4ef" value="Pegel"/>
+         <Text id="TI_9857ba5d-ee13-4966-90e6-9dad9f8dc6ca" value="Q2 DtO"/>
+         <Text id="TI_e678968f-c530-4b58-a0d4-fc07bd0a8213" value="Q1 nah"/>
+         <Text id="TI_f417e3d5-e777-4df1-a880-b14a58c5d38e" value="Q1 fern"/>
+         <Text id="TI_cdc653d2-84cb-4f0d-ae25-8eb2e8899ddb" value="Q2 nah"/>
+         <Text id="TI_70aeffe9-175f-4998-91c3-8dbc4b524048" value="Q2 fern"/>
+         <Text id="TI_8471e1cc-c848-4024-bd6c-dca01396b48e" value="Q1 ObSB"/>
+         <Text id="TI_e572c62c-c852-4e06-8154-206ecd3e5b3d" value="Q2 ObSB"/>
+         <Text id="TI_11279a07-b4e6-4e2b-bbca-16798120cba7" value="QA 4mA"/>
+         <Text id="TI_478a593d-bb26-4114-9e29-681e6fd43f2e" value="QA 20mA"/>
+         <Text id="TI_a1cfd2e8-04d1-4ac5-a394-967c93b844e7" value="QA 0V"/>
+         <Text id="TI_30ab912d-99f3-43bf-94a1-cc2bc21433b3" value="QA 10V"/>
+         <Text id="TI_1491f336-5c8d-4917-983a-03ae2e1aab07"
+               value="QA mA Teach Parameter"/>
+         <Text id="TI_ffa15436-6cc7-42ab-a891-f7bda620d530"
+               value="Q1 WINDOW Parameter"/>
+         <Text id="TI_9358e390-e01c-461b-9811-baa893e2b935"
+               value="Q2 WINDOW parameter"/>
+         <Text id="TI_e1e77d78-cb4d-4358-bdf2-1b26697600dc" value="Q1 ObSB Parameter"/>
+         <Text id="TI_553cc6f9-4394-4bf4-9614-179fba1fb83c" value="Q2 ObSB Parameter"/>
+         <Text id="TI_76017cc1-7b7c-4d81-85af-e78e1709e05b"
+               value="QA V Teach Parameter"/>
+         <Text id="TI_212cd897-645f-413d-bf2d-917a476950f0" value="Advanced"/>
+         <Text id="TI_ad6b8042-25a0-48ae-bef6-d22fc0b83b37" value="Oes4Id"/>
+         <Text id="TI_5a41bdc4-25df-4a70-b657-ccbb066b5580" value="OES4 Version"/>
+         <Text id="TI_45dd4d2f-f478-476c-8caa-ed87627ab112" value="EKId"/>
+         <Text id="TI_be52d1c1-0561-4588-9543-ea8228d6e82b"
+               value="EK ID SerNum, DatCode"/>
+         <Text id="TI_f265f44a-40e3-484e-bced-bd12d66db7d6" value="LdCharge"/>
+         <Text id="TI_95758edc-66b9-4fff-809a-71a6e33fc027"
+               value="Chargennummer der Laserdiode"/>
+         <Text id="TI_3ec8a745-488f-44b8-b4d0-c9be4d13128a" value="Fehlerspeicher"/>
+         <Text id="TI_5122e47c-0adc-4edb-97fd-72133a5c09bb" value="Fehlerspeicher"/>
+         <Text id="TI_00ae36b7-e04d-4081-8a73-4ce72279890a"
+               value="Betriebsstundenzähler"/>
+         <Text id="TI_78840c6d-0713-4ec4-a4e0-61ee442b18f6"
+               value="Betriebsstundenzähler"/>
+         <Text id="TI_61819458-5c37-4816-8ab0-3934971d3710" value="Passwort"/>
+         <Text id="TI_ed34dd02-6fcf-48ce-9a08-5d5b0d577e94"
+               value="Passwort zum Zugriff auf Experten Informationen"/>
+         <Text id="TI_9973074b-87a1-4193-b526-935cf76d4efb" value="Experten Modus"/>
+         <Text id="TI_e807a4cc-7e8b-4d20-bc2f-cb2802f469d3"
+               value="Q2 Ausgangsfunktion"/>
+         <Text id="TI_f048017a-3579-4298-8c3d-39304639b7bd"
+               value="Q2 Ausgangsfunktion"/>
+         <Text id="TI_3e4056b6-eec6-4e86-ae8d-4abc787c2e6c" value="schaltend"/>
+         <Text id="TI_a302d048-65d9-4c21-adcc-40a48bed43b5" value="4..20mA"/>
+         <Text id="TI_82c08e22-2205-4cca-be29-660558d0a13f" value="0..10V"/>
+         <Text id="TI_11701aa0-2ec7-4899-a414-f86e8d24aad5" value="VMA"/>
+         <Text id="TI_37ef24a2-b0f4-49ce-b166-b4f4a7741c88" value="Alarm"/>
+         <Text id="TI_dc5077d6-b8be-4729-998b-be4c52f2474d" value="Q2"/>
+         <Text id="TI_b5b4fa1a-4ee4-489a-bd64-a0f1383a2882" value="Q2"/>
+         <Text id="TI_78f22e61-97c9-41c9-a575-2b73fe70c7ba" value="Q2"/>
+         <Text id="TI_d30da446-0310-4884-8f1e-40e0abbfcd83"
+               value="Q1 nah-fern Mittenverschiebung"/>
+         <Text id="TI_441e3e8c-1b8a-45a1-a082-c1db9c3e30fa"
+               value="Q2 nah-fern Mittenverschiebung"/>
+         <Text id="TI_b3a0786f-bf01-4b5e-8881-8f6cd925f06f"
+               value="Q2 analog  nah-fern Mittenverschiebung"/>
+         <Text id="TI_e583cbe3-0501-4c2d-99ff-08e74fcd1d3f" value="Q Zeitfunktion"/>
+         <Text id="TI_2428ae64-1694-47dc-b0c6-96e24f345037" value="inaktiv"/>
+         <Text id="TI_2bfc0a8d-ec13-4432-8eef-d90bbaa48748" value="ON delay"/>
+         <Text id="TI_20b03947-8fba-43bf-877e-a5d5facb542c"
+               value="Q Zeit für Zeitfunktion"/>
+         <Text id="TI_d320b74f-d0dc-4a9a-9486-cebcd28ae244"
+               value="Einstellung der Verzögerungszeit für die aktive Zeitfunktion"/>
+         <Text id="TI_1da535b6-0243-45a7-a694-2c00b539ce39" value="Process Data In"/>
+         <Text id="TI_37691ed8-db86-4e58-8194-2334bcdc226a" value="Process Data In"/>
+         <Text id="TI_12eade65-be8e-4762-82da-e0138ba695a1" value="Signal Qualität"/>
+         <Text id="TI_b5380d2c-fb31-432b-976e-50ad6319e779" value="Distanz"/>
+         <Text id="TI_9e95c887-7874-4cae-823a-dab1d4329b89" value="Distanz"/>
+         <Text id="TI_2f997b32-5a5e-440c-89fc-8e2c9e5ac78f"
+               value="Distanz + Signal Qualität"/>
+         <Text id="TI_943ca78b-a1d1-4e96-b84b-fb3bb88f4b61" value="Benutzermarke 1"/>
+         <Text id="TI_742690f7-c3a7-43c0-ba88-a8e852cf352f" value="Benutzermarke 2"/>
+         <Text id="TI_2b225d59-da3d-4d16-bb99-f185cc3849cd" value="Benutzermarke 1"/>
+         <Text id="TI_dd1c2d38-337b-4f5c-9bbb-7d3390d188a8" value="Benutzermarke 2"/>
+         <Text id="TI_3e091481-d3a5-4ceb-8f5b-1464737f9e4c" value="Hardware Version"/>
+         <Text id="TI_be316f15-fb7c-45ab-8bd2-5f8b68dc3cf2" value="Firmware Version"/>
+         <Text id="TI_dc6f3efa-112b-4c38-8a04-3bcf05a6aa31" value="Revision"/>
+         <Text id="TI_8a1d4c5e-9ddb-4e21-9ba6-ddfa38fd9bf3"
+               value="Firmware Version aus der Versionskontrolle"/>
+         <Text id="TI_e7f3e008-b62f-427c-b8f2-04784f92c71c" value="Q1 Mittenposition"/>
+         <Text id="TI_6718d657-b2c0-4269-a53d-c8299dd15baa" value="Q2 Mittenposition"/>
+         <Text id="TI_175b65ae-8925-43c0-9c59-5a7f4dda2cd1" value="QA Mittenposition"/>
+         <Text id="TI_10f2b51c-8722-492c-a58a-72f14ee85310" value="Distanz"/>
+         <Text id="TI_f42b96c5-ba90-4fd0-8d30-09a4af023d5a" value="OFF delay"/>
+         <Text id="TI_b35f5e62-7431-4ee3-a02b-0ee45f7ca917" value="ON / OFF delay"/>
+         <Text id="TI_053ef9d4-283b-4ba5-8750-cb1fc47df500" value="One Shot"/>
+         <Text id="TI_ef4543cb-2186-4183-887d-3916058b0b3a" value="MF Konfiguration"/>
+         <Text id="TI_d54f5cc4-8e06-4c8e-82a8-87b3f98070fe" value="MF Konfiguration"/>
+         <Text id="TI_9b2b20bd-5316-4210-9f2e-aa7842db76a6" value="Laser ein/aus"/>
+         <Text id="TI_4c463520-84a4-4be2-a76c-1fd7dd762e6f"
+               value="Schaltet den Laser an oder aus"/>
+         <Text id="TI_49d7615e-2054-4ac1-be82-2a08dfa0ffa1" value="aus"/>
+         <Text id="TI_9eb93f48-0ecf-43fc-b8d9-1115979e1684" value="an"/>
+         <Text id="TI_ebb8c061-e0ff-46c1-bd04-e4af4562a62e" value="MF Polarität"/>
+         <Text id="TI_065e18e8-e8e5-41ba-aa41-66f66846de66"
+               value="MF Teach Bestätigung auf Q1"/>
+         <Text id="TI_da95653c-2f20-4c28-a22b-6609dc1cb7c3" value="Hi aktiv"/>
+         <Text id="TI_0eec6742-b247-4a39-bb16-edb8bd229207" value="Lo aktiv"/>
+         <Text id="TI_abae3275-2fb0-4958-b6b7-29534d5092e6" value="an"/>
+         <Text id="TI_ac2e8b8f-8372-4a66-b7e7-a40debc9bb84" value="aus"/>
+         <Text id="TI_aaf854f3-b886-4f08-a561-0ba610fc5dc6"
+               value="VMA Pegel Schwellwert"/>
+         <Text id="TI_51adab68-14ba-46cc-aa66-7f2176c6c8b8"
+               value="VMA Pegel Schwellwert - applikationsabhängig"/>
+         <Text id="TI_1f8531e9-d795-47c4-8f29-f4bbc2b5b81e" value="Q2 VMA Parameter"/>
+         <Text id="TI_a4c37b1c-6220-4a00-82f9-f2455c15cf21"
+               value="default: Maxwert aus Datenblatt"/>
+         <Text id="TI_27856a05-d18f-43e3-b70e-36ca4314820b"
+               value="Prozessdatenkonfiguration"/>
+         <Text id="TI_74f84da5-6467-4364-80f8-33f86e0f42d9" value="MF Konfiguration"/>
+         <Text id="TI_53a72909-078e-426e-87a0-cc21e10b863d" value="Ansprechzeit"/>
+         <Text id="TI_d8abad4d-977a-4c96-8a44-a020161cb65d" value="Expert"/>
+         <Text id="TI_85a5c768-8a2d-43fa-8973-e14e22a923ab" value="super slow"/>
+         <Text id="TI_3323d70d-2fd9-4bab-a466-397b0479843d" value="slow"/>
+         <Text id="TI_bcc3a64f-0f44-4454-838f-fc79f68381bd" value="medium"/>
+         <Text id="TI_7b5ddc94-ab70-455e-ad19-acb228acb0d9" value="fast"/>
+         <Text id="TI_ecdea812-fd27-493e-b64a-4e10d5c9f644" value="super fast"/>
+         <Text id="TI_5900167c-ee98-4bf6-b6f6-bdab6efa834f"
+               value="Experten Reaktionszeit Einstellung"/>
+         <Text id="TI_7bb8c86f-9bc4-49ce-bf95-d912e12ade92"
+               value="Experten Reaktionszeit Einstellung"/>
+         <Text id="TI_0049390e-6632-4cc5-a13f-defc82be5a3d" value="Factory Reset"/>
+         <Text id="TI_6d45b09c-b7af-45e6-8a23-7586b74f3f9b"
+               value="Konfiguration der Schalthysterese"/>
+         <Text id="TI_1aeb7798-9b2a-46aa-8d14-b6640d7dd5aa"
+               value="Alarm Konfiguration"/>
+         <Text id="TI_e7c3cf5d-cc72-4be9-bc4b-7cc926b6cb64"
+               value="Konfiguriert das Sensorverhalten im Alarmfall (Messobjekt ausserhalb des Messbereichs)"/>
+         <Text id="TI_c65790e4-f2d6-497e-9d8e-cf84aa4aa4cc" value="Clamp"/>
+         <Text id="TI_07cfb75d-fe5c-4853-9a70-67963128fb54" value="Hold"/>
+         <Text id="TI_7ebbb658-9dbb-43e6-aa93-fae504e70329" value="Mittelwertbildung"/>
+         <Text id="TI_84af542f-3e0b-4988-af7f-b17c10379de4"
+               value="Mittelwertbildung der Distanzmesswerte"/>
+         <Text id="TI_52ac3ebe-1ba1-4941-b7e7-c730851b66aa"
+               value="Prozessdaten Auflösung (Distanz)"/>
+         <Text id="TI_ad1603f9-0bf8-4585-ab40-328cb381bf1b"
+               value="Prozessdaten Auflösung (Distanz)"/>
+         <Text id="TI_878c21dd-c1fc-4166-b575-cfcb92d29781" value="Distanz in mm"/>
+         <Text id="TI_84cac41b-594b-4753-afae-4dba2c799ed8" value="Distanz in 1/10 mm"/>
+         <Text id="TI_b203f049-da62-4709-98be-2543b628ff08" value="Distanz Offset"/>
+         <Text id="TI_3a18bb7f-0134-4e24-a08e-3a2efd55e032"
+               value="Distanz Offset zur Kalibrierung der 0mm Position"/>
+         <Text id="TI_3022068f-9b65-459c-bac3-fa0d78ec116e" value="OFF"/>
+         <Text id="TI_6a7787f6-8a0a-4851-bf22-1e8a05ea8437" value="Filtertiefe 2"/>
+         <Text id="TI_654b135a-6f20-4ab8-9ab1-ef5087204476" value="Filtertiefe 4"/>
+         <Text id="TI_3afc900e-4f3b-4f8e-8c05-f39079715a00" value="Filtertiefe 8"/>
+         <Text id="TI_b8d08fca-ad6a-4ab1-86db-54147e03e1d8" value="Filtertiefe 16"/>
+         <Text id="TI_41e8863f-c148-41e9-80fe-502051154f75"
+               value="Integrationszeit (2^n) in Millisekunden"/>
+         <Text id="TI_292e4131-d4fd-4930-98b9-11d74de14870" value="Q2 ALARM Parameter"/>
+         <Text id="TI_d7f3cd99-f790-488f-a66a-ad58f6e407c8"
+               value="Prozessdaten Normierung (Distanz)"/>
+         <Text id="TI_0ebde357-c673-4130-a9f5-98f86fb758d6"
+               value="Normierung (Offset) der Prozessdaten"/>
+         <Text id="TI_32740fea-4ef0-4d71-a2a0-aa76d543ec0a" value="OFF"/>
+         <Text id="TI_471a9db2-0d7b-4454-a4cc-c275ddfae1eb" value="Filtertiefe 2"/>
+         <Text id="TI_e02c59e4-8f29-4cff-bc42-8600207a2ba3" value="Filtertiefe 4"/>
+         <Text id="TI_c2a55fed-5ed5-4fbb-8105-7db39f1a4e1b" value="Filtertiefe 8"/>
+         <Text id="TI_92a35a15-476c-4b78-b8db-76e61d4f42c2" value="Filtertiefe 16"/>
+         <Text id="TI_4fe0f8b8-9ff7-48ab-ba70-98e2dcf89c07" value="unlocked"/>
+         <Text id="TI_505c8091-afd9-4511-8a10-6ab387450230" value="locked"/>
+         <Text id="TI_140afedd-ae9d-4942-bd19-36af857a9716" value="Distanz in 10 mm"/>
+         <Text id="TI_8c0098a3-11de-4faa-8c4c-e07105e0653a"
+               value="Ansprechzeit - abhängig von der Laserklasse!"/>
+         <Text id="TI_308d772c-adb0-4d3f-b77e-1aa98d570db5"
+               value="Konfiguration der Polarität der Schaltausgänge"/>
+         <Text id="TI_3edb48ab-73e4-40d9-b845-e2ad54a476b4"
+               value="Länge des Entprellfilters der Schaltausgänge"/>
+         <Text id="TI_4e8d2c92-9236-43ca-bf09-bb00265b3a39"
+               value="Konfiguration des Schaltverhaltens von Q1"/>
+         <Text id="TI_ed532e6d-b841-41e8-afd3-b7b4e8d9760e"
+               value="Konfiguration der Hysteres am Q1 nah Schaltpunkt"/>
+         <Text id="TI_4a156673-08e6-4043-95b4-5c7b792b2150"
+               value="Konfiguration der Hysteres am Q1 fern Schaltpunkt"/>
+         <Text id="TI_7fadf6d2-6c4e-402c-923f-1dbb1c13efff"
+               value="Konfiguration der Hysteres am Q2 nah Schaltpunkt"/>
+         <Text id="TI_312cbcf3-7a64-4e4d-87fa-db83168e1bbd"
+               value="Konfiguration der Hysteres am Q2 fern Schaltpunkt"/>
+         <Text id="TI_448b1ef2-c50c-4a93-ab27-daf3c6321a00"
+               value="Konfiguration des Schaltverhaltens von Q2"/>
+         <Text id="TI_30add629-e4ee-446e-9dea-e8fbd139b44c"
+               value="Konfiguration der Funktionalität des MF Eingangs"/>
+         <Text id="TI_e9d8d253-50ac-46fa-814f-4a367eb79dd2"
+               value="Aktiviert oder deaktiviert die Tastensperre"/>
+         <Text id="TI_20559749-d342-49d6-a979-658c7831f309"
+               value="Anzeige oder Setzen der Mittenposition des Window Bereichs an Q1"/>
+         <Text id="TI_be8dcf32-a2e5-427c-b09c-9a969df56e2a"
+               value="Anzeige oder Setzen der Mittenposition des Window Bereichs an Q2"/>
+         <Text id="TI_f7d5f6f8-ce11-41e5-8148-00a99ffa7cf2"
+               value="Anzeige oder Setzen der Mittenposition des Analogausgangs"/>
+         <Text id="TI_77771832-4cad-4cd8-91b0-c35b618d0f8f"
+               value="Aktiviert und wählt den Schaltverzögerungsmodus"/>
+         <Text id="TI_de695de3-abf9-4c91-8c12-bfcd93e88a19"
+               value="Konfiguriert die Verzögerungszeit der Schaltausgangänge"/>
+         <Text id="TI_f0538f74-a68c-4cf3-84e5-06adfd464327" value="VMA"/>
+         <Text id="TI_27e00ea0-3cf4-4649-b375-c413c39355bc" value="Alarm"/>
+         <Text id="TI_755d0a7b-4cdf-4f30-8d8a-643af17b3889" value="Q1 VMA Parameter"/>
+         <Text id="TI_63730cd8-f40e-437a-a116-75ba3af7449e" value="Q1 ALARM Parameter"/>
+         <Text id="TI_be4fe041-a8b7-44b1-8499-2d75377c85d7" value="Feinteach PLUS"/>
+         <Text id="TI_04e6f13b-98c6-4cee-b2b3-783b22f9cebd" value="Feinteach MINUS"/>
+         <Text id="TI_7170057c-9422-4774-a189-3f3285b3805b" value="Timer Q1"/>
+         <Text id="TI_00509547-adaf-4c48-b80e-b703798da8e8" value="Timer Q1"/>
+         <Text id="TI_f54c5761-eea9-4abb-9a09-696460e3e014" value="DX35-Extended"/>
+         <Text id="TI_f77d059b-c145-42f3-947d-8a770a06059f" value=""/>
+         <Text id="TI_2d91ea7c-a3a2-4eaa-87cd-9abcd575cdd1" value="Q1 DtO Inv"/>
+         <Text id="TI_3dea2b30-ec0d-46fe-b478-1b1a35cb5008" value="Q2 DtO Inv"/>
+         <Text id="TI_60b3d4d3-cae3-43f1-920a-9222b1f1cde2" value="Q1 ObSB Inv"/>
+         <Text id="TI_43ce1589-e1a6-4124-8e5c-df48cee02078" value="Q2 ObSB Inv"/>
+         <Text id="TI_a92d6b63-dbea-483c-891a-608feb22255a" value="Timer + Q1 + Q2"/>
+         <Text id="TI_36be9369-3237-49d3-871c-315a3a1dcd99" value=""/>
+         <Text id="TI_5f49557e-36ac-4223-be18-fe8f2a4285a7" value="Q2"/>
+         <Text id="TI_d7abdb3f-0b5e-4be1-88b4-be061a427578" value="Q1"/>
+         <Text id="TI_9bc1d018-e9e2-45ba-8665-222704f2ec66" value="Timer"/>
+         <Text id="TI_110d7b39-6aa9-4ac6-9b33-649b4f0bb667" value="aktiv"/>
+         <Text id="TI_62f1f950-243b-4de9-b084-db109f4c9255" value="inaktiv"/>
+         <Text id="TI_cd8d6d79-b34c-47f5-bd54-2f159c0b2e92" value="aktiv"/>
+         <Text id="TI_6d14757b-8c9f-4dbb-acff-0f31e8c8ad1b" value="inaktiv"/>
+         <Text id="TI_775e374e-051d-4970-8745-4a7ac73709d0" value=""/>
+         <Text id="TI_22528c0c-60de-4df0-ae4b-26c09267c5e4" value=""/>
+         <Text id="TI_f9f26f2c-cff0-45d3-9638-6f40ecd2733c" value=""/>
+         <Text id="TI_0e4f4f94-5380-4464-af95-4c75090ee416" value=""/>
+         <Text id="TI_7cb7d676-ad18-4aa8-9785-082b2be7fbe1" value=""/>
+         <Text id="TI_18376b10-0e58-4b44-8732-8c6a1f47b173" value=""/>
+         <Text id="TI_c308d92a-8921-423e-8cb4-c920b914e530" value=""/>
+         <Text id="TI_2bc8f37a-cc3b-4882-9d37-a9f3b9601c2a" value=""/>
+         <Text id="TI_f25800d7-a1fe-4c92-912f-56f85b40d326" value=""/>
+         <Text id="TI_bb03e3f3-0445-4e6e-a207-d4f6f20bd372" value=""/>
+         <Text id="TI_f5947a6d-ed3a-49db-8db6-7cee8c332a0b" value=""/>
+         <Text id="TI_2cd8b3d9-ff22-4210-b53f-114de5527e15" value=""/>
+         <Text id="TI_e65709aa-e4fe-4176-abd0-8d86927a41a9" value=""/>
+         <Text id="TI_aec9f997-1b1d-4e15-bf6a-7f50d7a37560" value=""/>
+         <Text id="TI_20841842-c5b2-4c03-8b4f-a6995aa2b917" value=""/>
+         <Text id="TI_b07cdbe6-660e-4b3a-bbeb-8a28f95f1c24" value=""/>
+         <Text id="TI_87fde69d-4486-49dd-89be-b042dc991743" value="DT35-B15551S04"/>
+         <Text id="TI_f60cf3f2-0ab7-4dd5-9b36-325845889b95"
+               value="1068098 (DT35-B15551S04 DX35-Extended)"/>
+         <Text id="TI_91177b06-6839-4e27-8a14-3c9c3f05574f" value="Q2 / Qa"/>
+         <Text id="TI_794b71bf-7cce-480f-abc4-203ad1b28ba8" value="MF"/>
+         <Text id="TI_f8909037-571b-496f-b7de-aea7a6090415" value="Q2 / Qa"/>
+         <Text id="TI_4b6f70c3-2670-4292-9933-14df5b033d4d" value="MF"/>
+         <Text id="TI_e5620e5c-3d82-4042-8fc7-fb2eb0985910" value="DT35-B15551"/>
+         <Text id="TI_a35494e8-e91a-4a4e-b5eb-f8a42e59074a"
+               value="1057651 (DT35-B15551 DX35-Extended)"/>
+         <Text id="TI_89782ad6-b000-4d16-92e6-b6178f36ec76" value="Q2 / Qa"/>
+         <Text id="TI_822f2104-4c99-40e9-b1e6-d4ee0a8701a1" value="MF"/>
+         <Text id="TI_afcb8eb4-2b9f-43ee-a77d-f6a010ba65b8" value="DT35-B15251"/>
+         <Text id="TI_2e884e95-6481-4ffc-86e8-b8d66a1cd0a1"
+               value="1057652 (DT35-B15251 DX35-Extended)"/>
+         <Text id="TI_581d752f-542b-4015-bd59-75136af4157e" value="Q2 / Qa"/>
+         <Text id="TI_541c7f35-5313-40a6-a09a-62fb48ee0fb3" value="MF"/>
+         <Text id="TI_44c86b2f-d64f-4966-80df-af7c3b82c2fe" value="DT35-B15851"/>
+         <Text id="TI_589bc78e-83a6-40da-8b2d-7b5849e06d58"
+               value="1057653 (DT35-B15851 DX35-Extended)"/>
+         <Text id="TI_111ab75a-1a7e-4ad4-a770-fd75dc6bd568" value="Q2 / Qa"/>
+         <Text id="TI_658b73d7-72e3-4ce1-ad0f-9cc688280e5f" value="MF"/>
+         <Text id="TI_4979b14e-679a-474a-978e-fdc9338a2479" value="MF"/>
+         <Text id="TI_1fd9ea55-60db-440f-a195-8ee48e1beafd" value="MF"/>
+         <Text id="TI_dd55edfe-f205-4852-9806-3be461936372" value="MF"/>
+         <Text id="TI_a30843ac-5eb6-4c67-90c8-79820abae8bb" value="Q2 / Qa"/>
+         <Text id="TI_e4c61ccf-bdee-4fc7-a315-0a9a2ec4fc96" value="Q2 / Qa"/>
+         <Text id="TI_0ba57264-ab1a-4e47-bd6b-750461aab57f" value="Q2 / Qa"/>
+         <Text id="TI_5105f378-0948-4a19-a436-fbd8896d923a" value="DL35-B15552"/>
+         <Text id="TI_df57798d-af13-437f-b3f0-42d000396fa8"
+               value="1057657 (DL35-B15552 DX35-Extended)"/>
+         <Text id="TI_bb80d888-2a4e-477d-afd5-96a51b09e5d0" value="DL35-B15852"/>
+         <Text id="TI_97bcee4c-452a-4af9-860e-c17d47ef0cf3"
+               value="1057658 (DL35-B15852 DX35-Extended)"/>
+         <Text id="TI_51c13b69-d05f-46c4-a9bf-f314cf41eca9" value="DT35-B10251S03"/>
+         <Text id="TI_60edc772-b550-489a-97f7-263b1df8846e"
+               value="1066351 (DT35-B10251S03 DX35-Extended)"/>
+         <Text id="TI_b15ffa47-b730-4f9b-98eb-c433310174ff" value="DT35-B15551S05"/>
+         <Text id="TI_170fbbe4-3add-4f0f-9676-b1f1a8585e43"
+               value="1077665 (DT35-B15551S05 DX35-Extended)"/>
+         <Text id="TI_b91880de-fba4-426e-85d2-de62898337be" value="DT35-B15551S06"/>
+         <Text id="TI_5b4a00b4-76d9-4417-8a99-d9202d58e44b"
+               value="1077666 (DT35-B15551S06 DX35-Extended)"/>
+         <Text id="TI_2f0bd352-4284-4edd-ae31-36d15c0c46ce" value=""/>
+         <Text id="TI_8aaa70eb-25da-44f3-9018-6199870aabcc" value=""/>
+         <Text id="TI_130e50c7-4bbb-42ce-bacd-fe4e02f215d4" value=""/>
+         <Text id="TI_fdea2fd9-b442-4239-aa77-58c0aa5a950a" value=""/>
+      </Language>
+  </ExternalTextCollection>
+  <Stamp crc="3490328935"><Checker name="IODD-Checker V1.1.1" version="V1.1.1.0"/></Stamp>
+</IODevice>

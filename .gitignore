@@ -1,0 +1,25 @@
+# Keil transient build output
+MDK-ARM/IO_link_APM32F4-5RGT0/*
+!MDK-ARM/IO_link_APM32F4-5RGT0/IO_link_APM32F4-5RGT0.hex
+
+# IDE and build side files
+*.uvguix.*
+*.bak
+*.dep
+*.o
+*.d
+*.crf
+*.axf
+*.map
+*.lst
+*.lnp
+*.htm
+*.build_log.htm
+*.log
+DebugConfig/
+
+# OS metadata
+Thumbs.db
+desktop.ini
+.DS_Store
+*.lock
